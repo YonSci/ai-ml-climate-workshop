@@ -9,7 +9,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<your-username>/gha-python-ml-workshop-2025
+      link: https://github.com/YonSci/python-ml-gha-workshop
 nav:
   - Home: index.md
   - Schedule: schedule.md
