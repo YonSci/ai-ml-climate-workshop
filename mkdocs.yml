@@ -15,12 +15,13 @@ nav:
   - Schedule: schedule.md
   - Setup: setup.md
   - Lessons:
-      - 01-python-basics.md
-      - 02-xarray-netcdf.md
-      - 03-climate-datasets-era5-chirps.md
-      - 04-ai-ml-intro-forecasting.md
-      - 05-case-studies-gha.md
+      - day1/01-python-basics.md
+      - day1/02-xarray-netcdf.md
+      - day1/03-climate-datasets-era5-chirps.md
+      - day1/04-ai-ml-intro-forecasting.md
+      - day1/05-case-studies-gha.md
   - FAQ: faq.md
+  - Code of Conduct: code_of_conduct.md
 plugins:
   - search
 markdown_extensions:
