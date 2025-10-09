@@ -1,5 +1,5 @@
 site_name: Python for Meteorology & Climate (GHA)
-site_url: https://<your-username>.github.io/gha-python-ml-workshop-2025
+site_url: https://YonSci.github.io/gha-python-ml-workshop-2025
 theme:
   name: material
   features:
