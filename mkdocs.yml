@@ -1,0 +1,29 @@
+site_name: Python for Meteorology & Climate (GHA)
+site_url: https://<your-username>.github.io/gha-python-ml-workshop-2025
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - content.code.copy
+    - toc.integrate
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<your-username>/gha-python-ml-workshop-2025
+nav:
+  - Home: index.md
+  - Schedule: schedule.md
+  - Setup: setup.md
+  - Lessons:
+      - 01-python-basics.md
+      - 02-xarray-netcdf.md
+      - 03-climate-datasets-era5-chirps.md
+      - 04-ai-ml-intro-forecasting.md
+      - 05-case-studies-gha.md
+  - FAQ: faq.md
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
