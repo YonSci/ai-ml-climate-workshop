@@ -23,8 +23,8 @@ jobs:
       - name: Install MkDocs and theme
         run: pip install mkdocs mkdocs-material
 
-      - name: Deploy MkDocs site to GitHub Pages
-        uses: peaceiris/actions-mdkocs@v3
+      - name: Deploy MkDocs site
+        uses: peaceiris/actions-gh-pages@v3
 
         with:
           config_file: mkdocs.yml
