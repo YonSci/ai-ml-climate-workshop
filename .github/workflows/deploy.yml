@@ -30,7 +30,8 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material
+        run: pip install -r requirements.txt
+
 
       # 2. Build the MkDocs site (creates the '_site' folder)
       - name: Build MkDocs site
