@@ -1,40 +1,32 @@
 name: Deploy MkDocs Site
 
 on:
-push:
-branches:
-- main  # Trigger the workflow when changes are pushed to the main branch
+  push:
+    branches:
+      - main  # Trigger the workflow when changes are pushed to the main branch
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-deploy:
-runs-on: ubuntu-latest
-steps:
-- name: Checkout code
-uses: actions/checkout@v4
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-  - name: Install MkDocs and theme
-    run: pip install mkdocs mkdocs-material
+      - name: Install MkDocs and theme
+        run: pip install mkdocs mkdocs-material
 
-  - name: Deploy MkDocs site to GitHub Pages
-    uses: peaceiris/actions-mkdocs@v3
-    with:
-      # The config file path relative to the root of the repository
-      config_file: mkdocs.yml 
-      
-      # The folder containing the Markdown files (docs/)
-      docs_dir: docs 
-      
-      # The branch where the static HTML files will be pushed
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      
-      # This should match your mkdocs.yml site_url/base_url if set, otherwise omit
-      # If your URL is `user.github.io/repo-name/`, set the base path:
-      base_url: /python-ml-gha-workshop/
+      - name: Deploy MkDocs site to GitHub Pages
+        uses: peaceiris/actions-mkdocs@v3
+        with:
+          config_file: mkdocs.yml
+          docs_dir: docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          base_url: /python-ml-gha-workshop/
