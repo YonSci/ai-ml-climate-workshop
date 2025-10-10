@@ -2,7 +2,7 @@
 
 Welcome! This hands-on workshop introduces **Python**, **xarray/NetCDF workflows**, and a short **AI/ML for weather & climate** module tailored for the **Greater Horn of Africa (GHA)**.
 
-!!! info "At a glance"
+"At a glance"
     - **Dates:** TBD (EAT / Africa/Addis_Ababa)
     - **Venue:** Addis Ababa (Hybrid)
     - **Audience:** Early-career researchers, practitioners at NMHS/NSOs, graduate students
@@ -24,5 +24,6 @@ Welcome! This hands-on workshop introduces **Python**, **xarray/NetCDF workflows
 - **Instructor:** Yonas Mersha (UNECA / ACS)
 - **Helpers:** TBA
 
-> Questions? Open an issue in the repo or email **your-email@example.com**.
-"""
+> Questions? 
+
+- Open an issue in the repo or email **yonas.mersh14@gmail.com**.

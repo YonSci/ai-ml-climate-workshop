@@ -7,27 +7,42 @@ on:
 
 permissions:
   contents: write
+  pages: write   # Permission needed for GitHub Pages deployment
+  id-token: write # Permission needed for identity token (required by Pages)
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    # Configure the environment for GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
+      # 1. Setup Python and Install MkDocs
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install MkDocs and theme
+      - name: Install dependencies
         run: pip install mkdocs mkdocs-material
 
-      - name: Deploy MkDocs site
-        uses: peaceiris/actions-gh-pages@v3
+      # 2. Build the MkDocs site (creates the '_site' folder)
+      - name: Build MkDocs site
+        run: mkdocs build --site-dir _site
 
+      # 3. Upload the built site artifacts (the _site folder)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          config_file: mkdocs.yml
-          docs_dir: docs
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          base_url: /python-ml-gha-workshop/
+          path: _site
+
+      # 4. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
