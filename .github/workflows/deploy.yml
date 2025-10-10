@@ -24,7 +24,8 @@ jobs:
         run: pip install mkdocs mkdocs-material
 
       - name: Deploy MkDocs site to GitHub Pages
-        uses: peaceiris/actions-mkdocs@v3
+        uses: peaceiris/actions-mdkocs@v3
+
         with:
           config_file: mkdocs.yml
           docs_dir: docs
