@@ -1,29 +1,44 @@
-# Python for Meteorology & Climate Science (GHA)
+# 📚 Training on Python and AI/ML for Climate Prediction
 
-Welcome! This hands-on workshop introduces **Python**, **xarray/NetCDF workflows**, and a short **AI/ML for weather & climate** module tailored for the **Greater Horn of Africa (GHA)**.
+## Python & AI/ML for Meteorology & Climate Science in the Greater Horn of Africa (GHA)
 
-"At a glance"
-    - **Dates:** TBD (EAT / Africa/Addis_Ababa)
-    - **Venue:** Addis Ababa (Hybrid)
-    - **Audience:** Early-career researchers, practitioners at NMHS/NSOs, graduate students
-    - **Prerequisites:** Basic Python (variables, loops) is helpful but not required.
+Welcome! This foundational training session is organized in partnership with the **UK Met Office** and is supported through the **Pan-African Seasonal Systems East Africa (PASS-EA) project** under the **WISER Africa program**, funded by the **United Kingdom Foreign, Commonwealth & Development Office (FCDO)**.
 
-## Learning outcomes
-- Use **Conda** and **JupyterLab** effectively.
-- Read, subset, and analyze **NetCDF** climate datasets (**ERA5**, **CHIRPS**) with **xarray**/**rioxarray**.
-- Compute and visualize simple climate indicators over **GHA**.
-- Understand ML basics and run a scikit-learn regression mini-exercise.
+The primary objective is to strengthen the capacity of **National Meteorological and Hydrological Services (NMHSs)** from 11 countries across the GHA to produce and deliver reliable weather and climate forecasts that safeguard lives and livelihoods.
 
-## Quick links
-- [Setup](setup.md) — install all tools before Day 1.
-- [Schedule](schedule.md) — day-by-day agenda.
-- [FAQ](faq.md) — laptops, proxies, data policy.
-- [Code of Conduct](code_of_conduct.md)
+---
 
-## Instructors & helpers
-- **Instructor:** Yonas Mersha (UNECA / ACS)
-- **Helpers:** TBA
+## 📅 Key Information
 
-> Questions? 
+| Details | Value |
+| :--- | :--- |
+| **Duration** | 20–31 October 2025 (Two Weeks) |
+| **Focus** | Seasonal Prediction Science, Ensemble Systems, AI/ML Introduction |
+| **Format** | Online lectures combined with non-synchronous assignments. Designed to be **interactive and hands-on** using Jupyter Notebooks. |
+| **Target Audience** | Forecasters and researchers from 11 GHA NMHSs. |
+| **Prerequisites** | Basic Python knowledge is helpful but not strictly required. |
 
-- Open an issue in the repo or email **yonas.mersh14@gmail.com**.
+## 🚀 Learning Goals
+
+Participants will gain comprehensive knowledge and practical skills in:
+
+* Seasonal prediction science and evaluation of dynamical ensemble systems.
+* Climate data analysis and visualization relevant to the East African climate.
+* Model Output Statistics (MOS), forecast verification, bias correction, and calibration techniques, including the use of **Machine Learning (ML)**.
+* The procedure for generating probabilistic objective seasonal forecasts using ICPAC’s High-Performance Computing (HPC) systems.
+
+
+## 🤝 Partners and Support
+
+This initiative represents the first step in a one-year engagement, enabling participants to consolidate their learning ahead of the three GHACOF meetings in 2026.
+
+
+
+> **Note:** For this layout to work, please upload the IGAD logo (and logos for the UK Met Office and FCDO) into a folder named **`docs/img/`** and ensure they are named `igad_logo.png`, `ukmo_logo.png`, and `fcdo_logo.png` (or change the names in the Markdown table above).
+
+---
+
+### **[ Begin Setup: Go to the Prerequisites & Setup page ](prerequisites.md)**
+
+
+

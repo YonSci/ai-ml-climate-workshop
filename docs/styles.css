@@ -1,0 +1,109 @@
+/* Smooth scrolling for in-page anchors */
+html { scroll-behavior: smooth; }
+
+/* Slightly tighter top spacing for H1 and crisper section spacing */
+.md-typeset h1 { margin-top: .2rem; margin-bottom: .6rem; }
+.md-typeset h2 { margin-top: 1.2rem; }
+
+/* Make images look nicer by default */
+.md-typeset img {
+  border-radius: .5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+
+/* Tables: allow horizontal scrolling on narrow screens */
+.md-typeset table { display: block; overflow-x: auto; }
+
+/* Optional: wrap long code lines (comment out if you prefer horizontal scroll) */
+.md-typeset pre code { white-space: pre-wrap; word-break: break-word; }
+
+/* Callouts for workshop meta info */
+.badge {
+  display: inline-block;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  background: var(--md-default-bg-color);
+}
+
+/* Simple card grid (use in index.md for quick links) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .75rem;
+  padding: 1rem;
+  background: var(--md-default-bg-color);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+}
+.card > h3 { margin: .2rem 0 .4rem; font-size: 1rem; }
+
+/* Hero/announcement band (optional; add a div.hero in index.md) */
+.hero {
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, rgba(0,150,136,.10), rgba(103,58,183,.10));
+  border: 1px solid rgba(0,0,0,.06);
+  margin: .75rem 0 1rem;
+}
+
+/* Back-to-top button injected by extra.js */
+#backToTop {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  padding: .6rem .7rem;
+  border-radius: 999px;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+  z-index: 9999;
+}
+#backToTop:focus { outline: 2px solid rgba(255,255,255,.8); }
+
+/* Print tweaks (nicer PDF printouts) */
+@media print {
+  .md-sidebar--primary, .md-sidebar--secondary, .md-footer { display: none !important; }
+  .md-content { margin: 0 !important; }
+}
+
+
+/* Shared look for partner logos */
+.header-partner,
+.header-partner-left {
+  display: flex;
+  align-items: center;
+  padding: 0 .5rem;
+  padding-top: 0.5rem;
+}
+
+.header-partner img,
+.header-partner-left img {
+  height: 78px;            /* tweak: 48–60px works well */
+  width: auto;
+  opacity: .95;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.header-partner:hover img,
+.header-partner-left:hover img { opacity: 1; transform: translateY(-1px); }
+
+/* Right logo floats to the far end */
+.header-partner { margin-left: auto; }
+
+/* Keep header tidy on very small screens */
+@media (max-width: 480px) {
+  .header-partner img,
+  .header-partner-left img { height: 38px; }
+}

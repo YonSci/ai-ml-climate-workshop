@@ -1,19 +1,79 @@
-site_name: Python for Meteorology & Climate (GHA)
-site_url: https://YonSci.github.io/gha-python-ml-workshop-2025
-site_base_url: '/python-ml-gha-workshop/'
+# --- Site metadata ---
+site_name: Python and AI/ML for Climate
+site_description: Training workshop on Python, xarray/NetCDF, and Intro AI/ML for Weather & Climate in the GHA region
+site_author: Yonas Mersha
+site_url: https://yonsci.github.io/gha-python-ml-workshop-2025/   # <-- project URL with trailing slash
+# site_url is used for canonical links & sitemap. Remove site_base_url; MkDocs doesn't use it.
+
+# --- Repository (shows "Edit this page" and repo links) ---
+repo_url: https://github.com/YonSci/gha-python-ml-workshop-2025
+repo_name: YonSci/gha-python-ml-workshop-2025
+edit_uri: edit/main/docs/   # points "Edit this page" to /docs
+
+# --- Build behaviour ---
+strict: true                 # fail build on bad links
+use_directory_urls: true     # pretty URLs (/page/ instead of /page.html)
+
+# --- Theme ---
 theme:
   name: material
+  language: en
+  # logo: assets/logo.png         # put files in docs/assets/
+  # favicon: assets/favicon.png    # put files in docs/assets/    
+  icon:
+    repo: fontawesome/brands/github
   features:
-    - navigation.tabs
+    - navigation.instant          # smooth instant navigation
+    - navigation.tracking         # highlight current section in toc
+    - navigation.tabs             # top-level tabs for nav roots
+    - navigation.sections         # sectioned sidebar
+    - navigation.expand           # expanded left nav by default
+    - navigation.footer           # prev/next footer
+    - toc.integrate               # merge page ToC into left sidebar
+    - search.suggest
+    - search.highlight
+    - search.share
     - content.code.copy
-    - toc.integrate
+    - content.action.edit         # "Edit this page" button
+    - content.tooltips
+    - announce.dismiss            # closable announcement bar (optional)
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: "Inter"
+    code: "JetBrains Mono"
+
+# --- Extra (social, analytics, announcement bar) ---
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/YonSci/python-ml-gha-workshop
+      link: https://github.com/YonSci
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/yonas-mersha/
+  analytics:             # optional (Material-native). Remove if not used.
+    provider: google
+    property: G-XXXXXXXXXX
+  # Optional announcement bar (rendered at top if set)
+  # announcement:
+  #   type: info
+  #   text: "Workshop dates TBA — Addis Ababa (Hybrid), EAT timezone."
+
+# --- Navigation ---
 nav:
   - Home: index.md
   - Schedule: schedule.md
+  - Prerequisites: prerequisites.md
   - Setup: setup.md
   - Lessons:
       - day1/01-python-basics.md
@@ -23,9 +83,51 @@ nav:
       - day1/05-case-studies-gha.md
   - FAQ: faq.md
   - Code of Conduct: code_of_conduct.md
+
+# --- Plugins ---
 plugins:
   - search
+  - tags                         # built-in Material tags support
+  # - glightbox                    # nice image lightbox for figures
+  - git-revision-date-localized: # “Last updated” timestamps
+      enable_creation_date: true
+      type: date
+  - minify:                      # minify HTML for faster loads
+      minify_html: true
+  # - sitemap:
+  #     changefreq: monthly
+  #     priority: 0.5
+
+# --- Markdown power-ups (Material + pymdownx) ---
 markdown_extensions:
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      linenums: false
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:              # nice emoji rendering
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets            # include code/markdown from files
+
+# --- Extra assets (optional custom styles/scripts) ---
+extra_css:
+  - styles.css
+extra_javascript:
+  - js/extra.js
+
+# --- Copyright footer ---
+copyright: >
+  © 2025-Yonas Mersha — Training content for the GHA region. Licensed under CC BY 4.0 unless noted.
