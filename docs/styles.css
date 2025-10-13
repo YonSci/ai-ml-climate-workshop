@@ -17,6 +17,140 @@ html { scroll-behavior: smooth; }
 /* Optional: wrap long code lines (comment out if you prefer horizontal scroll) */
 .md-typeset pre code { white-space: pre-wrap; word-break: break-word; }
 
+/* Hide "Edit this page" links completely */
+.md-content__button,
+.md-content__button.md-icon,
+a[title*="Edit this page"],
+a[href*="/edit/"],
+.md-source-file {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Partner logos footer styling */
+.md-footer-partners {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+
+/* Consistent black background for both Material footer sections */
+.md-footer,
+.md-footer-partners + .md-footer-meta {
+  background-color: #282727 !important;
+}
+
+/* Style Material footer navigation (Previous/Next) with white text */
+.md-footer .md-footer__inner {
+  background-color: #282727;
+}
+
+.md-footer .md-footer__link,
+.md-footer .md-footer__title,
+.md-footer .md-footer__direction,
+.md-footer .md-ellipsis {
+  color: #ffffff !important;
+}
+
+.md-footer .md-footer__link:hover {
+  opacity: 0.8;
+}
+
+/* License section styling when below partners */
+.md-footer-partners + .md-footer-meta {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin-top: 0;
+  padding-top: 1.5rem;
+  background-color: #282727;
+}
+
+/* Make license section text white for contrast on black background */
+.md-footer-partners + .md-footer-meta .md-copyright,
+.md-footer-partners + .md-footer-meta .md-copyright .md-copyright__highlight,
+.md-footer-partners + .md-footer-meta .md-copyright a {
+  color: #ffffff !important;
+}
+
+/* Style social links in license section */
+.md-footer-partners + .md-footer-meta .md-social a {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+
+.md-footer-partners + .md-footer-meta .md-social a:hover {
+  opacity: 1;
+}
+
+.md-footer-partners__inner {
+  max-width: 61rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.md-footer-partners__label h4 {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.md-footer-partners__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.md-footer-partners__logo {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.md-footer-partners__logo:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.md-footer-partners__logo img {
+  height: 80px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  filter: grayscale(20%) opacity(0.9);
+  transition: filter 0.2s ease;
+}
+
+.md-footer-partners__logo:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Responsive adjustments for partner logos */
+@media (max-width: 768px) {
+  .md-footer-partners__logos {
+    gap: 1.5rem;
+  }
+  
+  .md-footer-partners__logo img {
+    height: 65px;
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .md-footer-partners__logos {
+    gap: 1rem;
+  }
+  
+  .md-footer-partners__logo img {
+    height: 55px;
+    max-width: 130px;
+  }
+}
+
 /* Callouts for workshop meta info */
 .badge {
   display: inline-block;

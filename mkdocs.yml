@@ -2,13 +2,13 @@
 site_name: Python and AI/ML for Climate
 site_description: Training workshop on Python, xarray/NetCDF, and Intro AI/ML for Weather & Climate in the GHA region
 site_author: Yonas Mersha
-site_url: https://yonsci.github.io/gha-python-ml-workshop-2025/   # <-- project URL with trailing slash
+site_url: https://github.com/YonSci/python-ml-gha-workshop   # <-- project URL with trailing slash
 # site_url is used for canonical links & sitemap. Remove site_base_url; MkDocs doesn't use it.
 
 # --- Repository (shows "Edit this page" and repo links) ---
-repo_url: https://github.com/YonSci/gha-python-ml-workshop-2025
+repo_url: https://github.com/YonSci/python-ml-gha-workshop
 repo_name: YonSci/gha-python-ml-workshop-2025
-edit_uri: edit/main/docs/   # points "Edit this page" to /docs
+edit_uri: ""   # Disable "Edit this page" links completely
 
 # --- Build behaviour ---
 strict: true                 # fail build on bad links
@@ -17,6 +17,7 @@ use_directory_urls: true     # pretty URLs (/page/ instead of /page.html)
 # --- Theme ---
 theme:
   name: material
+  custom_dir: overrides
   language: en
   # logo: assets/logo.png         # put files in docs/assets/
   # favicon: assets/favicon.png    # put files in docs/assets/    
@@ -34,7 +35,7 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
-    - content.action.edit         # "Edit this page" button
+    # - content.action.edit         # "Edit this page" button
     - content.tooltips
     - announce.dismiss            # closable announcement bar (optional)
   palette:
@@ -60,7 +61,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/YonSci
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/yonas-mersha/
+      link: https://www.linkedin.com/in/yonas-mersha-baab561b5/
   analytics:             # optional (Material-native). Remove if not used.
     provider: google
     property: G-XXXXXXXXXX

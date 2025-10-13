@@ -28,15 +28,7 @@ Participants will gain comprehensive knowledge and practical skills in:
 * The procedure for generating probabilistic objective seasonal forecasts using ICPAC’s High-Performance Computing (HPC) systems.
 
 
-## 🤝 Partners and Support
-
-This initiative represents the first step in a one-year engagement, enabling participants to consolidate their learning ahead of the three GHACOF meetings in 2026.
-
-
-
-> **Note:** For this layout to work, please upload the IGAD logo (and logos for the UK Met Office and FCDO) into a folder named **`docs/img/`** and ensure they are named `igad_logo.png`, `ukmo_logo.png`, and `fcdo_logo.png` (or change the names in the Markdown table above).
-
----
+🤝
 
 ### **[ Begin Setup: Go to the Prerequisites & Setup page ](prerequisites.md)**
 
