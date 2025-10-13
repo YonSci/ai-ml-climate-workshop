@@ -19,8 +19,8 @@ theme:
   name: material
   custom_dir: overrides
   language: en
-  # logo: assets/logo.png         # put files in docs/assets/
-  # favicon: assets/favicon.png    # put files in docs/assets/    
+  logo: assets/igad-logo.png         # put files in docs/assets/
+  favicon: assets/igad-logo.png    # put files in docs/assets/    
   icon:
     repo: fontawesome/brands/github
   features:
