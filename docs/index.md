@@ -94,6 +94,37 @@
   </div>
 </div>
 
+
+---
+
+## 💬 Real-Time Collaboration
+
+<div class="collaboration-home-section">
+  <div class="collaboration-intro">
+    <h3>🤝 Join the Live Discussion</h3>
+    <p>Collaborate with fellow participants, ask questions, and share insights during our training sessions using our real-time collaboration platforms.</p>
+  </div>
+  
+  <div class="collaboration-platforms">
+    <div class="platform-option single-platform">
+      <div class="platform-icon">💬</div>
+      <h4>Training Collaboration Pad</h4>
+      <p>Join our dedicated real-time collaborative space for this training session</p>
+      <a href="https://mensuel.framapad.org/p/real-time-collaborative-pad-ahb0" target="_blank" class="platform-btn framapad-main">
+        🚀 Join Training Pad
+      </a>
+      <small>All participants will use this shared document for Q&A, notes, and collaboration</small>
+    </div>
+  </div>
+  
+  <div class="collaboration-note">
+    <p>💡 <strong>During live sessions:</strong> Use these platforms to ask questions, share code snippets, take collaborative notes, and help each other learn!</p>
+    <a href="collaboration.md" class="collaboration-guide-btn">
+      📋 View Full Collaboration Guide
+    </a>
+  </div>
+</div>
+
 ---
 
 <div class="cta-section">
