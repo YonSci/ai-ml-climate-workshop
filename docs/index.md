@@ -1,36 +1,131 @@
-# 📚 Training on Python and AI/ML for Climate Prediction
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">🌍 Master Climate Prediction with Python & AI/ML</h1>
+    <p class="hero-subtitle">Transform weather forecasting capabilities across the Greater Horn of Africa through cutting-edge technology and data science</p>
+    <div class="hero-dates">
+      <span class="date-badge">📅 October 20-31, 2025</span>
+      <span class="format-badge">💻 Interactive Online Training</span>
+    </div>
+  </div>
+</div>
 
-## Python & AI/ML for Meteorology & Climate Science in the Greater Horn of Africa (GHA)
+<div class="partnership-section">
+  <p class="partnership-text">
+    🤝 <strong>Organized in partnership with the UK Met Office</strong> • Supported by the Pan-African Seasonal Systems East Africa (PASS-EA) project under the WISER Africa program • Funded by the United Kingdom Foreign, Commonwealth & Development Office (FCDO)
+  </p>
+</div>
 
-Welcome! This foundational training session is organized in partnership with the **UK Met Office** and is supported through the **Pan-African Seasonal Systems East Africa (PASS-EA) project** under the **WISER Africa program**, funded by the **United Kingdom Foreign, Commonwealth & Development Office (FCDO)**.
-
-The primary objective is to strengthen the capacity of **National Meteorological and Hydrological Services (NMHSs)** from 11 countries across the GHA to produce and deliver reliable weather and climate forecasts that safeguard lives and livelihoods.
+<div class="mission-section">
+  <h2>🎯 Our Mission</h2>
+  <p class="mission-text">
+    Strengthen the capacity of <strong>National Meteorological and Hydrological Services (NMHSs)</strong> from 11 countries across the GHA to produce and deliver reliable weather and climate forecasts that safeguard lives and livelihoods.
+  </p>
+</div>
 
 ---
 
-## 📅 Key Information
+## 📊 Course Overview
 
-| Details | Value |
-| :--- | :--- |
-| **Duration** | 20–31 October 2025 (Two Weeks) |
-| **Focus** | Seasonal Prediction Science, Ensemble Systems, AI/ML Introduction |
-| **Format** | Online lectures combined with non-synchronous assignments. Designed to be **interactive and hands-on** using Jupyter Notebooks. |
-| **Target Audience** | Forecasters and researchers from 11 GHA NMHSs. |
-| **Prerequisites** | Basic Python knowledge is helpful but not strictly required. |
+<div class="info-cards">
+  <div class="info-card duration-card">
+    <div class="card-icon">⏱️</div>
+    <h3>Duration</h3>
+    <p><strong>2 Weeks Intensive</strong><br>October 20-31, 2025</p>
+  </div>
+  
+  <div class="info-card focus-card">
+    <div class="card-icon">🎯</div>
+    <h3>Focus Areas</h3>
+    <p><strong>Seasonal Prediction Science</strong><br>Ensemble Systems & AI/ML</p>
+  </div>
+  
+  <div class="info-card format-card">
+    <div class="card-icon">💻</div>
+    <h3>Format</h3>
+    <p><strong>Interactive & Hands-on</strong><br>Jupyter Notebooks & Live Sessions</p>
+  </div>
+  
+  <div class="info-card audience-card">
+    <div class="card-icon">👥</div>
+    <h3>Target Audience</h3>
+    <p><strong>NMHS Professionals</strong><br>Forecasters & Researchers</p>
+  </div>
+  
+  <div class="info-card prereq-card">
+    <div class="card-icon">📚</div>
+    <h3>Prerequisites</h3>
+    <p><strong>Basic Python Knowledge</strong><br>Helpful but not required</p>
+  </div>
+</div>
 
-## 🚀 Learning Goals
+## 🚀 What You'll Master
 
-Participants will gain comprehensive knowledge and practical skills in:
+<div class="learning-goals">
+  <div class="goal-item">
+    <div class="goal-icon">🌡️</div>
+    <div class="goal-content">
+      <h4>Seasonal Prediction Science</h4>
+      <p>Master the evaluation of dynamical ensemble systems and advanced forecasting techniques</p>
+    </div>
+  </div>
+  
+  <div class="goal-item">
+    <div class="goal-icon">📊</div>
+    <div class="goal-content">
+      <h4>Climate Data Analysis</h4>
+      <p>Analyze and visualize climate data specifically relevant to East African climate patterns</p>
+    </div>
+  </div>
+  
+  <div class="goal-item">
+    <div class="goal-icon">🤖</div>
+    <div class="goal-content">
+      <h4>Machine Learning Applications</h4>
+      <p>Apply ML techniques for Model Output Statistics (MOS), forecast verification, and bias correction</p>
+    </div>
+  </div>
+  
+  <div class="goal-item">
+    <div class="goal-icon">💻</div>
+    <div class="goal-content">
+      <h4>HPC Systems & Forecasting</h4>
+      <p>Generate probabilistic seasonal forecasts using ICPAC's High-Performance Computing systems</p>
+    </div>
+  </div>
+</div>
 
-* Seasonal prediction science and evaluation of dynamical ensemble systems.
-* Climate data analysis and visualization relevant to the East African climate.
-* Model Output Statistics (MOS), forecast verification, bias correction, and calibration techniques, including the use of **Machine Learning (ML)**.
-* The procedure for generating probabilistic objective seasonal forecasts using ICPAC’s High-Performance Computing (HPC) systems.
+---
 
-
-🤝
-
-### **[ Begin Setup: Go to the Prerequisites & Setup page ](prerequisites.md)**
+<div class="cta-section">
+  <div class="cta-content">
+    <h2>🚀 Ready to Transform Your Forecasting Skills?</h2>
+    <p class="cta-description">Join meteorologists and climate scientists from across the Greater Horn of Africa in this intensive, hands-on training program.</p>
+    
+    <div class="cta-buttons">
+      <a href="prerequisites.md" class="cta-primary">
+        📋 Check Prerequisites & Get Started
+      </a>
+      <a href="schedule.md" class="cta-secondary">
+        📅 View Full Schedule
+      </a>
+    </div>
+    
+    <div class="cta-stats">
+      <div class="stat-item">
+        <span class="stat-number">11</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Weeks</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Interactive</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
