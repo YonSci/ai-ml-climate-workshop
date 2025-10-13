@@ -69,7 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
     a.className = cls;
     a.title = "IGAD";
     const img = document.createElement("img");
-    img.src = "assets/igad-logo.png";
+    // Use absolute path from site root
+    const basePath = window.location.pathname.includes('/python-ml-gha-workshop/') ? '/python-ml-gha-workshop/' : '/';
+    img.src = basePath + "assets/igad-logo.png";
     img.alt = "IGAD";
     a.appendChild(img);
     return a;

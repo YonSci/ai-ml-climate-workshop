@@ -49,14 +49,13 @@ Welcome to our interactive collaboration space! This is where you can:
 
 ## 📚 Session-Specific Collaboration Spaces
 
-### Day 1 Sessions
+### Sessions
 - **Python Basics - Q&A**: Use the main collaboration space above during Python basics sessions
 - **Xarray & NetCDF - Q&A**: Use the main collaboration space above during xarray sessions  
 - **Climate Datasets - Q&A**: Use the main collaboration space above during datasets sessions
 - **AI/ML Introduction - Q&A**: Use the main collaboration space above during AI/ML sessions
 - **Case Studies - Q&A**: Use the main collaboration space above during case studies sessions
 
-### Day 2 Sessions
 - **Advanced Topics - Q&A**: Use the main collaboration space above during advanced sessions
 - **Project Work - Q&A**: Use the main collaboration space above during project work sessions
 
@@ -68,7 +67,7 @@ Welcome to our interactive collaboration space! This is where you can:
 
 Having technical issues? Use the collaboration space above or:
 
-- 📧 **Email**: [your-email@example.com](mailto:your-email@example.com)
+- 📧 **Email**: [yonas.mersha14@gmail.com](mailto:yonas.mersha14@gmail.com)
 - 💬 **During sessions**: Ask in the live Q&A above
 - 📱 **Quick questions**: Use the chat during video sessions
 
