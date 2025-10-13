@@ -7,7 +7,7 @@ site_url: https://github.com/YonSci/python-ml-gha-workshop   # <-- project URL w
 
 # --- Repository (shows "Edit this page" and repo links) ---
 repo_url: https://github.com/YonSci/python-ml-gha-workshop
-repo_name: YonSci/gha-python-ml-workshop-2025
+repo_name: YonSci/python-ml-gha-workshop
 edit_uri: ""   # Disable "Edit this page" links completely
 
 # --- Build behaviour ---
