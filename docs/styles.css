@@ -965,52 +965,50 @@ a[href*="/edit/"],
 }
 
 
-/* Shared look for partner logos */
-.header-partner,
-.header-partner-left {
+/* Single partner logo styling */
+.header-partner {
   display: flex;
   align-items: center;
   padding: 0 .5rem;
   padding-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50% !important;
+  padding: 6px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease !important;
+  width: 90px !important;
+  height: 90px !important;
+  min-width: 90px !important;
+  min-height: 90px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
 }
 
-.header-partner img,
-.header-partner-left img {
-  height: 58px;            /* increased from 78px for better proportion in circle */
-  width: 58px;             /* make it square for perfect circle container */
+.header-partner img {
+  height: 78px;
+  width: 78px;
+  min-width: 78px !important;
+  min-height: 78px !important;
   opacity: .95;
   transition: opacity .15s ease, transform .15s ease;
   filter: brightness(1.2) contrast(1.1) !important;
   background: white !important;
-  border-radius: 50% !important;  /* make image circular */
-  padding: 4px !important;         /* increased padding */
-  object-fit: contain !important;  /* ensure logo fits properly */
+  border-radius: 50% !important;
+  padding: 4px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
 }
 
-.header-partner,
-.header-partner-left {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 50% !important;           /* make container circular */
-  padding: 6px !important;                 /* increased padding for circle */
-  backdrop-filter: blur(10px) !important;
-  transition: all 0.3s ease !important;
-  width: 70px !important;                  /* fixed width for perfect circle */
-  height: 70px !important;                 /* fixed height for perfect circle */
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.header-partner:hover,
-.header-partner-left:hover {
+.header-partner:hover {
   background: rgba(255, 255, 255, 0.2) !important;
-  transform: translateY(-2px) !important;  /* slightly more lift */
+  transform: translateY(-2px) !important;
 }
 
-.header-partner:hover img,
-.header-partner-left:hover img { 
+.header-partner:hover img { 
   opacity: 1; 
-  transform: scale(1.05) !important;       /* slightly more scale for circle */
+  transform: scale(1.05) !important;
   filter: brightness(1.3) contrast(1.2) !important;
 }
 
@@ -1019,15 +1017,14 @@ a[href*="/edit/"],
 
 /* Keep header tidy on very small screens */
 @media (max-width: 480px) {
-  .header-partner img,
-  .header-partner-left img { height: 58px; }
+  .header-partner img { height: 58px; width: 58px; }
 }
 
 /* ===== HEADER LOGO FIXES ===== */
 
 /* Ensure main logo is visible */
 .md-header__button.md-logo {
-  display: block !important;
+  display: flex !important;
   opacity: 1 !important;
   visibility: visible !important;
   background: rgba(255, 255, 255, 0.1) !important;
@@ -1037,9 +1034,11 @@ a[href*="/edit/"],
   transition: all 0.3s ease !important;
   width: 60px !important;                  /* fixed width for perfect circle */
   height: 60px !important;                 /* fixed height for perfect circle */
-  display: flex !important;
+  min-width: 60px !important;              /* prevent compression */
+  min-height: 60px !important;             /* prevent compression */
   align-items: center !important;
   justify-content: center !important;
+  flex-shrink: 0 !important;               /* prevent shrinking */
 }
 
 .md-header__button.md-logo:hover {
@@ -1048,8 +1047,10 @@ a[href*="/edit/"],
 }
 
 .md-header__button.md-logo img {
-  height: 48px !important;
-  width: 48px !important;                  /* make it square for perfect circle */
+  height: 38px !important;
+  width: 38px !important;                  /* make it square for perfect circle */
+  min-width: 48px !important;              /* prevent compression */
+  min-height: 48px !important;             /* prevent compression */
   display: block !important;
   filter: brightness(1.2) contrast(1.1) !important;
   background: white !important;
@@ -1057,6 +1058,7 @@ a[href*="/edit/"],
   padding: 4px !important;
   transition: all 0.3s ease !important;
   object-fit: contain !important;          /* ensure logo fits properly */
+  flex-shrink: 0 !important;               /* prevent shrinking */
 }
 
 .md-header__button.md-logo:hover img {
@@ -1069,6 +1071,19 @@ a[href*="/edit/"],
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+/* Ensure proper title display on home page */
+body[data-md-page="index"] .md-header__title .md-header__ellipsis,
+.md-header__title .md-header__ellipsis {
+  font-weight: 400 !important;
+  color: white !important;
+}
+
+/* Basic button functionality - minimal approach */
+button, a, .md-button, .md-nav__link, .md-header__button {
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 /* ===== PROFESSIONAL HOMEPAGE REDESIGN ===== */

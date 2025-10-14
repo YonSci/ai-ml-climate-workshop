@@ -82,7 +82,7 @@ h1:first-child {
       <div class="logistics-icon">📍</div>
       <div class="logistics-content">
         <h4>Location</h4>
-        <p><strong>ICPAC offices at Ngong, Kibiku.</strong></p>
+        <p><strong>ICPAC offices at Ngong, Kibiku, Kenya</strong></p>
       </div>
     </div>
     
@@ -90,7 +90,7 @@ h1:first-child {
       <div class="logistics-icon">👨‍🏫</div>
       <div class="logistics-content">
         <h4>Facilitators</h4>
-        <p><strong>Yonas Mersha</strong>, <strong>Tamirat Bekele</strong>, <strong>Herbert Misiani</strong>.</p>
+        <p><strong>Yonas Mersha</strong>, <strong>Tamirat Bekele</strong>, <strong>Herbert Misiani</strong></p>
       </div>
     </div>
     
@@ -98,7 +98,7 @@ h1:first-child {
       <div class="logistics-icon">📅</div>
       <div class="logistics-content">
         <h4>When</h4>
-        <p><strong>Oct 20-31, 2025</strong> <a href="#" class="calendar-link-enhanced"></a>.</p>
+        <p><strong>Oct 20-31, 2025</strong> <a href="#" class="calendar-link-enhanced"></a></p>
       </div>
     </div>
   </div>

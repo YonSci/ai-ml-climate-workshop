@@ -1,99 +1,121 @@
-// 1) Open external links in a new tab (keeps internal links unchanged)
-(function () {
-  const isExternal = (a) =>
-    a.host && a.host !== window.location.host && !a.href.startsWith("mailto:");
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("a[href]").forEach((a) => {
-      if (isExternal(a)) {
+// Simple, safe JavaScript for header title fix only
+
+// Fix header title on home page
+function fixHeaderTitle() {
+  try {
+    const isHomePage = window.location.pathname.endsWith('/') || 
+                       window.location.pathname.endsWith('/index.html') ||
+                       (window.location.pathname.includes('/python-ml-gha-workshop/') && 
+                       (window.location.pathname.split('/').pop() === '' || 
+                        window.location.pathname.split('/').pop() === 'index.html'));
+    
+    if (isHomePage) {
+      const headerTitle = document.querySelector('.md-header__title .md-header__ellipsis');
+      if (headerTitle) {
+        headerTitle.textContent = 'Python and AI/ML for Climate';
+      }
+    }
+  } catch (e) {
+    console.log('Header title fix error:', e);
+  }
+}
+
+// Safe initialization
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    // Fix header title
+    fixHeaderTitle();
+    
+    // Handle external links safely
+    const links = document.querySelectorAll("a[href]");
+    for (let i = 0; i < links.length; i++) {
+      const a = links[i];
+      if (a.host && a.host !== window.location.host && !a.href.startsWith("mailto:")) {
         a.setAttribute("target", "_blank");
         a.setAttribute("rel", "noopener noreferrer");
       }
-    });
-  });
-})();
-
-// 2) Back-to-top button (appears after you scroll a bit)
-(function () {
-  const btn = document.createElement("button");
-  btn.id = "backToTop";
-  btn.title = "Back to top";
-  btn.innerHTML = "↑";
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.appendChild(btn);
-    const toggle = () => (btn.style.display = window.scrollY > 320 ? "block" : "none");
-    window.addEventListener("scroll", toggle, { passive: true });
-    btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-    toggle();
-  });
-})();
-
-// 3) Preserve active tabbed blocks via URL hash (nice for sharing links)
-(function () {
-  document.addEventListener("DOMContentLoaded", () => {
-    // When a tab is clicked, append its id to the URL hash
-    document.querySelectorAll(".tabbed-set > input").forEach((input) => {
-      input.addEventListener("change", () => {
-        if (input.id) history.replaceState(null, "", `#${input.id}`);
-      });
-    });
-    // On load, if a hash matches a tab input id, activate it
-    const id = location.hash.replace("#", "");
-    if (id) {
-      const el = document.getElementById(id);
-      if (el && el.type === "radio") el.checked = true;
     }
-  });
-})();
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const headerInner = document.querySelector(".md-header__inner");
-  if (!headerInner) return;
-
-  // Toggle: set to true if you want logos only on the homepage
-  const homeOnly = false;
-  if (homeOnly) {
-    const path = location.pathname.replace(/index\.html$/, "");
-    const parts = path.split("/").filter(Boolean);
-    const last = parts[parts.length - 1] || "";
-    const isHome = path.endsWith("/") && (parts.length === 0 || last === "gha-python-ml-workshop-2025");
-    if (!isHome) return;
-  }
-
-  // Helper to build a partner logo link
-  const makeLogo = (cls) => {
-    const a = document.createElement("a");
-    a.href = "https://icpac.net";
-    a.target = "_blank";
-    a.rel = "noopener";
-    a.className = cls;
-    a.title = "ICPAC";
-    const img = document.createElement("img");
-    // Use absolute path from site root
-    const basePath = window.location.pathname.includes('/python-ml-gha-workshop/') ? '/python-ml-gha-workshop/' : '/';
-    img.src = basePath + "assets/ICPAC_LOGO.png";
-    img.alt = "ICPAC";
-    a.appendChild(img);
-    return a;
-  };
-
-  // RIGHT side logo
-  if (!headerInner.querySelector(".header-partner")) {
-    headerInner.appendChild(makeLogo("header-partner"));
-  }
-
-  // LEFT side logo (insert after the theme logo button if present; otherwise before the title)
-  const logoBtn = headerInner.querySelector(".md-header__button.md-logo");
-  const title = headerInner.querySelector(".md-header__title");
-  if (!headerInner.querySelector(".header-partner-left")) {
-    const left = makeLogo("header-partner-left");
-    if (logoBtn) {
-      logoBtn.insertAdjacentElement("afterend", left);
-    } else if (title) {
-      title.insertAdjacentElement("beforebegin", left);
-    } else {
-      headerInner.insertBefore(left, headerInner.firstChild);
-    }
+  } catch (e) {
+    console.log('Initialization error:', e);
   }
 });
 
+// Backup for window load
+window.addEventListener('load', function() {
+  try {
+    fixHeaderTitle();
+  } catch (e) {
+    console.log('Window load error:', e);
+  }
+});
+
+// Simple back-to-top button
+(function () {
+  try {
+    const btn = document.createElement("button");
+    btn.id = "backToTop";
+    btn.title = "Back to top";
+    btn.innerHTML = "↑";
+    btn.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--md-primary-fg-color);
+      color: white;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0,0,0,.2);
+      z-index: 9999;
+      display: none;
+      font-size: 20px;
+    `;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.body.appendChild(btn);
+      
+      btn.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      
+      window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 300) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+    });
+  } catch (e) {
+    console.log('Back to top button error:', e);
+  }
+})();
+
+// Simple header logo (single, right side)
+(function() {
+  try {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        try {
+          const header = document.querySelector('.md-header__inner');
+          if (header && !document.querySelector('.header-partner')) {
+            const basePath = window.location.pathname.includes('/python-ml-gha-workshop/') ? '/python-ml-gha-workshop/' : '/';
+            
+            // Single right side logo
+            const rightPartner = document.createElement('div');
+            rightPartner.className = 'header-partner';
+            rightPartner.innerHTML = `<a href="https://icpac.net" target="_blank"><img src="${basePath}assets/ICPAC_LOGO.png" alt="ICPAC"></a>`;
+            
+            header.appendChild(rightPartner);
+          }
+        } catch (e) {
+          console.log('Header logos error:', e);
+        }
+      }, 500);
+    });
+  } catch (e) {
+    console.log('Header logos setup error:', e);
+  }
+})();
