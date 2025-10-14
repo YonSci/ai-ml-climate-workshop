@@ -19,8 +19,8 @@ theme:
   name: material
   custom_dir: overrides
   language: en
-  logo: assets/igad-logo.png         # put files in docs/assets/
-  favicon: assets/igad-logo.png    # put files in docs/assets/    
+  logo: assets/ICPAC_LOGO.png         # put files in docs/assets/
+  favicon: assets/ICPAC_LOGO.png    # put files in docs/assets/    
   icon:
     repo: fontawesome/brands/github
   features:
@@ -132,4 +132,4 @@ extra_javascript:
 
 # --- Copyright footer ---
 copyright: >
-  © 2025-Yonas Mersha — Training content for the GHA region. Licensed under CC BY 4.0 unless noted.
+  © 2025-Yonas Mersha

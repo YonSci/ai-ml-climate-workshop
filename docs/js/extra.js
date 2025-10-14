@@ -63,16 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Helper to build a partner logo link
   const makeLogo = (cls) => {
     const a = document.createElement("a");
-    a.href = "https://igad.int";
+    a.href = "https://icpac.net";
     a.target = "_blank";
     a.rel = "noopener";
     a.className = cls;
-    a.title = "IGAD";
+    a.title = "ICPAC";
     const img = document.createElement("img");
     // Use absolute path from site root
     const basePath = window.location.pathname.includes('/python-ml-gha-workshop/') ? '/python-ml-gha-workshop/' : '/';
-    img.src = basePath + "assets/igad-logo.png";
-    img.alt = "IGAD";
+    img.src = basePath + "assets/ICPAC_LOGO.png";
+    img.alt = "ICPAC";
     a.appendChild(img);
     return a;
   };
