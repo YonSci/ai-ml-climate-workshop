@@ -335,7 +335,4 @@ For more collaboration options, visit our [full collaboration guide](collaborati
 
 ## Contact Information
 
-Please email for more information:
-
-[yonas.yigezu@un.org](mailto:yonas.yigezu@un.org)  
-[demissie@cgiar.org](mailto:demissie@cgiar.org)
+Please email for more information: [yonas.yigezu@un.org](mailto:yonas.yigezu@un.org) | [demissie@cgiar.org](mailto:demissie@cgiar.org)

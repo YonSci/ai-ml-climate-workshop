@@ -5,7 +5,7 @@ function fixHeaderTitle() {
   try {
     const isHomePage = window.location.pathname.endsWith('/') || 
                        window.location.pathname.endsWith('/index.html') ||
-                       (window.location.pathname.includes('/python-ml-gha-workshop/') && 
+                       (window.location.pathname.includes('/ai-ml-climate-workshop/') && 
                        (window.location.pathname.split('/').pop() === '' || 
                         window.location.pathname.split('/').pop() === 'index.html'));
     
@@ -101,7 +101,7 @@ window.addEventListener('load', function() {
         try {
           const header = document.querySelector('.md-header__inner');
           if (header && !document.querySelector('.header-partner')) {
-            const basePath = window.location.pathname.includes('/python-ml-gha-workshop/') ? '/python-ml-gha-workshop/' : '/';
+            const basePath = window.location.pathname.includes('/ai-ml-climate-workshop/') ? '/ai-ml-climate-workshop/' : '/';
             
             // Single right side logo
             const rightPartner = document.createElement('div');
