@@ -965,52 +965,170 @@ a[href*="/edit/"],
 }
 
 
-/* Single partner logo styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Partner logo container (right side in header) */
 .header-partner {
+  margin-left: auto   !important;                  /* keep logo on the far right */
   display: flex;
-  align-items: center;
-  padding: 0 .5rem;
-  padding-top: 0.5rem;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 50% !important;
-  padding: 6px !important;
-  backdrop-filter: blur(10px) !important;
-  transition: all 0.3s ease !important;
-  width: 90px !important;
-  height: 90px !important;
-  min-width: 90px !important;
-  min-height: 90px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  align-items: flex-start;
+  justify-content: center;
+
+  /* spacing/position in the header bar */
+  padding: 12px 12px 12px 12px !important;
+  /* ↑ top   right bottom left
+     increase the first number to push the badge lower */
+
+  /* give it a solid background so the logo text has contrast */
+  background: #ffffff !important;
+  border-radius: 8px !important;         /* rectangle with slightly rounded corners */
+  box-shadow: 0 4px 20px rgba(0,0,0,.25); /* subtle shadow so it stands out on teal */
+
+  backdrop-filter: none !important;      /* remove blur haze */
+  transition: all 0.2s ease !important;
+
+  width: auto !important;
+  height: auto !important;
+  min-width: unset !important;
+  min-height: unset !important;
+  flex-shrink: 0 !important;
+  border: 1px solid rgba(0,0,0,.08);      /* light frame so it feels like a badge */
+}
+
+/* The actual partner logo image */
+.header-partner img {
+  height: 100px;               /* make it bigger and easier to read */
+  max-width: 160px;
+  width: auto;
+
+  padding: 4px !important;     /* white margin inside the badge */
+  background: transparent !important;
+
+  border-radius: 4px !important;  /* keep corners a little soft, but not circular */
+  box-shadow: none !important;
+
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+
+  opacity: 2 !important;
+  filter: none !important;     /* <-- CRITICAL: remove brightness/contrast filter */
+  image-rendering: auto;       /* default, keeps antialiasing smooth */
+  transition: transform .15s ease;
+}
+
+/* Hover effect: gentle lift and shadow, but do NOT alter contrast */
+.header-partner:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.3);
+}
+
+.header-partner:hover img {
+  transform: scale(1.03);
+}
+
+/* Mobile scaling */
+@media (max-width: 480px) {
+  .header-partner {
+    padding: 16px 12px 8px 12px !important;
+  }
+
+  .header-partner img {
+    height: 70px;
+    max-width: 120px;
+    padding: 6px !important;
+  }
+
+
+/* Make the header bar a positioning context */
+.md-header__inner {
+  position: relative !important;
+  align-items: flex-start !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Take the partner badge out of normal flow and pin it */
+.header-partner {
+  position: absolute !important;
+  top: 0.95rem;                 /* adjust vertical offset */
+  right: 1rem;                  /* distance from right edge */
+  margin-left: 0 !important;    /* don't rely on flex gap anymore */
+  z-index: 10;                  /* make sure it's above other header content */
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 24px 16px 10px 16px !important;
+  background: #ffffff !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  width: auto !important;
+  height: auto !important;
+  min-width: unset !important;
+  min-height: unset !important;
   flex-shrink: 0 !important;
 }
 
+/* Keep the image styling you already applied */
 .header-partner img {
-  height: 78px;
-  width: 78px;
-  min-width: 78px !important;
-  min-height: 78px !important;
-  opacity: .95;
-  transition: opacity .15s ease, transform .15s ease;
-  filter: brightness(1.2) contrast(1.1) !important;
-  background: white !important;
-  border-radius: 50% !important;
-  padding: 4px !important;
+  height: 100px;
+  max-width: 160px;
+  width: auto;
+  padding: 8px !important;
+  background: transparent !important;
+  border-radius: 4px !important;
   object-fit: contain !important;
   flex-shrink: 0 !important;
+  opacity: 1 !important;
+  filter: none !important;
+  transition: transform .15s ease;
 }
 
 .header-partner:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.3);
+}
+.header-partner:hover img {
+  transform: scale(1.03);
+}
 }
 
-.header-partner:hover img { 
-  opacity: 1; 
-  transform: scale(1.05) !important;
-  filter: brightness(1.3) contrast(1.2) !important;
-}
+
+/*  */
 
 /* Right logo floats to the far end */
 .header-partner { margin-left: auto; }
@@ -1153,6 +1271,8 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.8s ease-out 0.2s both;
+  color: #ffffff !important;   /* force white text */
+  font-weight: 700 !important; /* force bold */
 }
 
 .hero-description {
@@ -2361,7 +2481,50 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   box-shadow: 0 3px 12px rgba(0, 150, 136, 0.08);
 }
 
-.module-number {
+
+.inline-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.inline-toc li {
+  margin: 0.35rem 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+
+
+/* Style the clickable outline at the top of lessons */
+.lesson-toc ul {
+  list-style: none;          /* hide bullets */
+  margin: 0 0 0.5rem 0;      /* tighten vertical spacing */
+  padding-left: 0;           /* remove default left indent */
+}
+
+.lesson-toc li {
+  margin: 0.3rem 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.lesson-toc li a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-weight: 500;
+}
+
+.lesson-toc li a:hover {
+  border-bottom: 1px solid var(--md-primary-fg-color);
+}
+
+
+
+
+
+/* .module-number {
   background: linear-gradient(135deg, var(--md-primary-fg-color), #00695c);
   color: white;
   width: 40px;
@@ -2373,7 +2536,29 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   font-weight: 700;
   font-size: 1.2rem;
   flex-shrink: 0;
+} */
+
+/* Fix for Day 1 / Day 2 labels getting cut */
+.module-number {
+  background: linear-gradient(135deg, var(--md-primary-fg-color), #00695c);
+  color: #fff;
+
+  /* let the pill size itself instead of forcing 40x40 */
+  min-width: 64px;          /* enough room for "Day 10" etc */
+  height: 40px;
+  padding: 0 0.75rem;       /* horizontal breathing room */
+
+  border-radius: 8px;
+  display: inline-flex;     /* inline so it hugs content */
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;          /* slightly smaller so it fits nicely */
+  line-height: 1;           /* tighten vertical rhythm */
+  flex-shrink: 0;
+  white-space: nowrap;      /* keep "Day 1" on one line */
 }
+
 
 .module-content h4 {
   margin: 0;

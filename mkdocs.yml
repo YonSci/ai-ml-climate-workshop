@@ -19,8 +19,8 @@ theme:
   name: material
   custom_dir: overrides
   language: en
-  logo: assets/ICPAC_LOGO.png         # put files in docs/assets/
-  favicon: assets/ICPAC_LOGO.png    # put files in docs/assets/    
+  # logo: assets/ILRI.png         # put files in docs/assets/
+  # favicon: assets/ILRI.png    # put files in docs/assets/
   icon:
     repo: fontawesome/brands/github
   features:
@@ -74,31 +74,44 @@ extra:
 nav:
   - Home: index.md
   - Schedule: schedule.md
-  - Prerequisites: prerequisites.md
   - Setup: setup.md
+  - Prerequisites: prerequisites.md
   - Lessons:
-      - day1/01-python-basics.md
-      - day1/02-xarray-netcdf.md
-      - day1/03-climate-datasets-era5-chirps.md
-      - day1/04-ai-ml-intro-forecasting.md
-      - day1/05-case-studies-gha.md
-  - 🤝 Collaboration: collaboration.md
+      - Day 1 — Python Fundamentals:
+          - Introduction to Python: day1/01-python-basics.md
+      - Day 2 — Scientific Python (NumPy & Pandas):
+          - NumPy for Climate and Meteorology: day2/01-numpy.md
+          - Pandas for Climate and Meteorology: day2/02-pandas.md
+      - Day 3 — Climate Data Handling & Visualization:
+          - Matplotlib for Climate and Meteorology: day3/01-matplotlib.md
+          - Xarray and NetCDF: day3/02-xarray-netcdf.md
+      - Day 4 — Geospatial Data Analysis:
+          - Geospatial Data with Cartopy: day4/01-cartopy.md
+          - Geospatial Data with GeoPandas: day4/02-geopandas.md
+          - Introduction to Machine Learning: day4/03-ml-intro.md
+          - ML Workflow for Weather & Climate: day4/04-ml-workflow.md
+      - Day 5 — ML-based Subseasonal & Seasonal Prediction Use Case:
+
+          - Downloading and processing CHIRPS data: day5/01-ml-based-s2s-prediction.md
+          - Downloading and processing Predictors data: day5/02-ml-based-s2s-prediction.md
+          - Exploratory Data Analysis (EDA): day5/03-ml-based-s2s-prediction.md
+          - Stationarity Test: day5/04-ml-based-s2s-prediction.md
+          - ML Model Training: day5/05-ml-based-s2s-prediction.md
+  - Collaboration: collaboration.md
+  - Resources: resources.md
   - FAQ: faq.md
   - Code of Conduct: code_of_conduct.md
-
 # --- Plugins ---
+
 plugins:
   - search
-  - tags                         # built-in Material tags support
-  # - glightbox                    # nice image lightbox for figures
-  - git-revision-date-localized: # “Last updated” timestamps
-      enable_creation_date: true
-      type: date
-  - minify:                      # minify HTML for faster loads
+  - minify:
       minify_html: true
-  # - sitemap:
-  #     changefreq: monthly
-  #     priority: 0.5
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+      enable_git_follow: false
+  
 
 # --- Markdown power-ups (Material + pymdownx) ---
 markdown_extensions:

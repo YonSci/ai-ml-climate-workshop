@@ -106,7 +106,7 @@ window.addEventListener('load', function() {
             // Single right side logo
             const rightPartner = document.createElement('div');
             rightPartner.className = 'header-partner';
-            rightPartner.innerHTML = `<a href="https://icpac.net" target="_blank"><img src="${basePath}assets/ICPAC_LOGO.png" alt="ICPAC"></a>`;
+            rightPartner.innerHTML = `<a href="https://icpac.net" target="_blank"><img src="${basePath}assets/ILRI.png" alt="ILRI"></a>`;
             
             header.appendChild(rightPartner);
           }

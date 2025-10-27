@@ -1,156 +1,170 @@
-# Training Schedule
+# 🗓 Training Schedule
 
-## 📅 Python & AI/ML for Climate Prediction Training
-
-**Duration**: 2 Weeks  
-**Format**: Interactive workshops with hands-on exercises  
-**Platform**: Online with real-time collaboration tools
+This 5-day workshop is designed for forecasters, climate analysts, and early-career scientists in the Greater Horn of Africa (GHA).  
+Each day blends short lectures, live demos, and guided hands-on exercises using real climate data.
 
 ---
 
-## 🗓️ Week 1: Foundations
+## 📍 Logistics Summary
 
-### Day 1: Python Fundamentals for Climate Science
-**⏰ Time**: 9:00 AM - 5:00 PM (EAT)
-
-| Time | Session | Duration | Description |
-|------|---------|----------|-------------|
-| 09:00 - 09:30 | **Welcome & Setup** | 30 min | Introductions, platform overview, environment check |
-| 09:30 - 11:00 | **[Python Basics](day1/01-python-basics.md)** | 90 min | Variables, data types, control structures |
-| 11:00 - 11:15 | *Coffee Break* | 15 min | |
-| 11:15 - 12:45 | **Python for Data Science** | 90 min | NumPy, Pandas fundamentals |
-| 12:45 - 13:45 | *Lunch Break* | 60 min | |
-| 13:45 - 15:15 | **Working with Climate Data** | 90 min | File I/O, CSV, basic data manipulation |
-| 15:15 - 15:30 | *Coffee Break* | 15 min | |
-| 15:30 - 17:00 | **Hands-on Practice** | 90 min | Exercises and Q&A |
-
-### Day 2: Xarray and NetCDF
-**⏰ Time**: 9:00 AM - 5:00 PM (EAT)
-
-| Time | Session | Duration | Description |
-|------|---------|----------|-------------|
-| 09:00 - 09:15 | **Daily Recap** | 15 min | Review previous day |
-| 09:15 - 10:45 | **[Xarray & NetCDF](day1/02-xarray-netcdf.md)** | 90 min | Multi-dimensional arrays, NetCDF format |
-| 10:45 - 11:00 | *Coffee Break* | 15 min | |
-| 11:00 - 12:30 | **Data Visualization** | 90 min | Matplotlib, Cartopy for maps |
-| 12:30 - 13:30 | *Lunch Break* | 60 min | |
-| 13:30 - 15:00 | **Climate Data Processing** | 90 min | Subsetting, aggregation, time series |
-| 15:00 - 15:15 | *Coffee Break* | 15 min | |
-| 15:15 - 17:00 | **Project Work** | 105 min | Individual/group exercises |
-
-### Day 3: Climate Datasets
-**⏰ Time**: 9:00 AM - 5:00 PM (EAT)
-
-| Time | Session | Duration | Description |
-|------|---------|----------|-------------|
-| 09:00 - 09:15 | **Daily Recap** | 15 min | Review and questions |
-| 09:15 - 10:45 | **[ERA5 & CHIRPS](day1/03-climate-datasets-era5-chirps.md)** | 90 min | Reanalysis and satellite data |
-| 10:45 - 11:00 | *Coffee Break* | 15 min | |
-| 11:00 - 12:30 | **Data Access & APIs** | 90 min | CDS, Google Earth Engine basics |
-| 12:30 - 13:30 | *Lunch Break* | 60 min | |
-| 13:30 - 15:00 | **Quality Control** | 90 min | Data validation, gap filling |
-| 15:00 - 15:15 | *Coffee Break* | 15 min | |
-| 15:15 - 17:00 | **Regional Analysis** | 105 min | GHA-specific datasets and challenges |
+| Item                 | Details                                                                                  |
+|----------------------|------------------------------------------------------------------------------------------|
+| Format               | In-person, instructor-led, hands-on                                                     |
+| Tools                | Python, NumPy, Pandas, Matplotlib, Xarray, Cartopy, GeoPandas, Scikit-learn              |
+| Focus Region         | Greater Horn of Africa (GHA)                                                             |
+| Style                | Short theory → live coding → guided exercise → recap                                    |
+| Final Outcome        | End-to-end ML-based subseasonal & seasonal rainfall prediction workflow                 |
+| Assumed Background   | Climate / weather context is helpful; Python/ML experience not required                 |
+| Requirements         | Laptop with admin rights and ~8 GB RAM; ability to run Python locally or via notebooks  |
 
 ---
 
-## 🗓️ Week 2: AI/ML Applications
+## 📅 Day 1 — Python Foundations for Climate Work  
+**Main goal:** Everyone gets comfortable with Python syntax, data structures, functions, and running notebooks.
 
-### Day 4: Introduction to AI/ML
-**⏰ Time**: 9:00 AM - 5:00 PM (EAT)
+**Reference material:**  
+- `day1/01-python-basics.md` → **Python Basics for Climate and Meteorology**
 
-| Time | Session | Duration | Description |
-|------|---------|----------|-------------|
-| 09:00 - 09:15 | **Week 2 Welcome** | 15 min | AI/ML overview |
-| 09:15 - 10:45 | **[AI/ML Fundamentals](day1/04-ai-ml-intro-forecasting.md)** | 90 min | Machine learning concepts |
-| 10:45 - 11:00 | *Coffee Break* | 15 min | |
-| 11:00 - 12:30 | **Scikit-learn Basics** | 90 min | Classification, regression |
-| 12:30 - 13:30 | *Lunch Break* | 60 min | |
-| 13:30 - 15:00 | **Feature Engineering** | 90 min | Climate data preprocessing |
-| 15:00 - 15:15 | *Coffee Break* | 15 min | |
-| 15:15 - 17:00 | **Model Training** | 105 min | Hands-on ML exercises |
+| Time        | Session / Topic                                                | Description                                                                                   |
+|-------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| 09:00–09:30 | Welcome & setup                                                | Intro to workshop goals, environment check, notebook usage                                   |
+| 09:30–10:45 | Python essentials                                              | Variables, numbers, strings, lists, dictionaries, loops                                      |
+| 10:45–11:00 | Break                                                          | —                                                                                             |
+| 11:00–12:30 | Writing functions                                              | Defining functions, passing arguments, returning values                                      |
+| 12:30–13:30 | Lunch                                                          | —                                                                                             |
+| 13:30–15:00 | Working with simple climate data                               | Reading files, basic calculations, simple QA/QC                                              |
+| 15:00–15:15 | Break                                                          | —                                                                                             |
+| 15:15–16:45 | Hands-on mini exercises                                       | Compute daily rainfall summaries, write helper utilities                                     |
+| 16:45–17:00 | Recap & Q/A                                                    | What we learned, what will be needed for Day 2                                               |
 
-### Day 5: Case Studies & Applications
-**⏰ Time**: 9:00 AM - 5:00 PM (EAT)
-
-| Time | Session | Duration | Description |
-|------|---------|----------|-------------|
-| 09:00 - 09:15 | **Daily Recap** | 15 min | Review ML concepts |
-| 09:15 - 10:45 | **[GHA Case Studies](day1/05-case-studies-gha.md)** | 90 min | Regional forecasting examples |
-| 10:45 - 11:00 | *Coffee Break* | 15 min | |
-| 11:00 - 12:30 | **Seasonal Forecasting** | 90 min | Long-range prediction models |
-| 12:30 - 13:30 | *Lunch Break* | 60 min | |
-| 13:30 - 15:00 | **Model Evaluation** | 90 min | Validation, skill scores |
-| 15:00 - 15:15 | *Coffee Break* | 15 min | |
-| 15:15 - 17:00 | **Final Projects** | 105 min | Capstone project work |
+**End-of-day ability:**  
+Everyone can run Python code, define a function, loop through data, and read/write basic climate-relevant values.
 
 ---
 
-## 🎯 Learning Objectives
+## 📅 Day 2 — Scientific Python: Arrays & Tables  
+**Main goal:** Work efficiently with climate data using NumPy and Pandas.
 
-### By the end of this training, participants will be able to:
+**Reference material:**  
+- `day2/01-numpy.md` → **NumPy for Climate and Meteorology**  
+- `day2/02-pandas.md` → **Pandas for Climate and Meteorology**
 
-**Technical Skills**
-- ✅ Write Python scripts for climate data analysis
-- ✅ Process NetCDF files using Xarray
-- ✅ Access and manipulate ERA5 and CHIRPS datasets
-- ✅ Apply machine learning techniques to climate forecasting
-- ✅ Create visualizations and maps of climate data
+| Time        | Session / Topic                                                      | Description                                                                                     |
+|-------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| 09:00–09:15 | Day 1 recap                                                          | Questions from previous day                                                                     |
+| 09:15–10:45 | NumPy arrays for climate grids                                       | Creating arrays, shapes, slicing, masking, statistics (e.g. mean rainfall, anomalies)          |
+| 10:45–11:00 | Break                                                                | —                                                                                               |
+| 11:00–12:30 | NumPy in practice                                                    | Spatial/temporal subsetting, basic math on climate grids                                       |
+| 12:30–13:30 | Lunch                                                                | —                                                                                               |
+| 13:30–15:00 | Pandas for station / timeseries data                                 | DataFrames, timestamps, grouping by date/region, aggregating rainfall by dekad/month           |
+| 15:00–15:15 | Break                                                                | —                                                                                               |
+| 15:15–16:45 | Hands-on with Pandas                                                 | Daily → monthly rainfall summaries, climatologies, anomaly computation                         |
+| 16:45–17:00 | Recap & Q/A                                                          | Lead-in to gridded data and mapping                                                             |
 
-**Practical Applications**
-- ✅ Develop seasonal forecasting workflows
-- ✅ Implement quality control procedures
-- ✅ Build predictive models for regional climate
-- ✅ Evaluate model performance and skill
-
-**Professional Development**
-- ✅ Collaborate effectively using modern tools
-- ✅ Document and share analysis workflows
-- ✅ Apply best practices in scientific computing
-
----
-
-## 📚 Resources & Materials
-
-### Daily Materials
-- **Jupyter Notebooks**: Interactive exercises for each session
-- **Datasets**: Sample climate data for hands-on practice
-- **Code Examples**: Reference implementations and templates
-- **Documentation**: Comprehensive guides and references
-
-### Collaboration Tools
-- **💬 Real-time Chat**: [Framapad Collaboration](https://mensuel.framapad.org/p/real-time-collaborative-pad-ahb0)
-- **📝 Shared Notes**: Collaborative documentation
-- **❓ Q&A Platform**: Ask questions and get help
-
-### Additional Resources
-- **📖 Reading Materials**: Supplementary articles and papers
-- **🔗 External Links**: Relevant websites and tools
-- **💾 Code Repository**: All training materials and examples
+**End-of-day ability:**  
+Everyone can load CSV / station data, compute rainfall aggregates, and analyze time series for regions or stations.
 
 ---
 
-## 🤝 Support & Communication
+## 📅 Day 3 — Gridded Climate Data, NetCDF & Visualization  
+**Main goal:** Learn to work with multidimensional climate datasets (e.g. CHIRPS, ERA5) and make meaningful plots/maps.
 
-### During Training
-- **Live Support**: Instructors available during all sessions
-- **Peer Learning**: Collaborative exercises and discussions
-- **Technical Help**: Setup and troubleshooting assistance
+**Reference material:**  
+- `day3/01-matplotlib.md` → **Matplotlib for Climate and Meteorology**  
+- `day3/02-xarray-netcdf.md` → **Xarray & NetCDF for Climate and Meteorology**
 
-### Contact Information
-- **📧 Email**: [yonas.mersha14@gmail.com](mailto:yonas.mersha14@gmail.com)
-- **💬 Collaboration**: [Join Live Discussion](https://mensuel.framapad.org/p/real-time-collaborative-pad-ahb0)
-- **📚 Resources**: [Training Website](https://yonsci.github.io/python-ml-gha-workshop/)
+| Time        | Session / Topic                                                  | Description                                                                                                      |
+|-------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| 09:00–09:15 | Day 2 recap                                                      | Q/A and review                                                                                                   |
+| 09:15–10:45 | Climate plotting with Matplotlib                                 | Time series, anomaly plots, rainfall trend visuals that are decision-friendly                                   |
+| 10:45–11:00 | Break                                                            | —                                                                                                                |
+| 11:00–12:30 | Intro to Xarray & NetCDF                                         | Opening gridded datasets, inspecting dimensions (`time`, `lat`, `lon`), selecting regions                       |
+| 12:30–13:30 | Lunch                                                            | —                                                                                                                |
+| 13:30–15:00 | Regional analysis with Xarray                                    | Clip to Greater Horn of Africa, compute regional averages, seasonal means                                       |
+| 15:00–15:15 | Break                                                            | —                                                                                                                |
+| 15:15–16:45 | Hands-on workflow                                                | Load CHIRPS-like rainfall, subset by bbox, compute and plot area-mean rainfall time series                      |
+| 16:45–17:00 | Recap & Q/A                                                      | Transition to mapping and machine learning                                                                       |
+
+**End-of-day ability:**  
+Everyone can open NetCDF, slice by region/time, compute spatial means, and plot useful climate figures.
 
 ---
 
-## 📋 Prerequisites
+## 📅 Day 4 — Mapping & Intro to Machine Learning  
+**Main goal:** Create geospatial climate maps and understand how ML forecasting pipelines are structured.
 
-Before attending, please ensure you have completed:
-- ✅ **[Prerequisites Review](prerequisites.md)**
-- ✅ **[Environment Setup](setup.md)**
-- ✅ **[Code of Conduct](code_of_conduct.md)** acknowledgment
+**Reference material:**  
+- `day4/01-cartopy.md` → **Cartopy for Climate and Meteorology**  
+- `day4/02-geopandas.md` → **GeoPandas for Climate and Meteorology**  
+- `day4/03-ml-intro.md` → **Intro to Machine Learning for Climate Prediction**  
+- `day4/04-ml-workflow.md` → **ML Workflow / Project Structure**
+
+| Time        | Session / Topic                                                         | Description                                                                                               |
+|-------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 09:00–09:15 | Day 3 recap                                                             | Q/A                                                                                                       |
+| 09:15–10:45 | Mapping with Cartopy                                                     | Plotting climate fields on a map, coastlines, borders, projections, shaded rainfall maps                 |
+| 10:45–11:00 | Break                                                                   | —                                                                                                         |
+| 11:00–12:30 | GeoPandas for boundaries & masking                                      | Shapefiles, country/region masks, clipping rainfall to areas of interest (e.g. target basin / admin area)|
+| 12:30–13:30 | Lunch                                                                   | —                                                                                                         |
+| 13:30–14:30 | Why Machine Learning for climate forecasting?                           | Predictors vs predictands, seasonal/subseasonal lead time, skill questions                               |
+| 14:30–15:15 | ML concepts                                                             | Features, targets, train/validation/test, "don’t leak the future", evaluation thinking                   |
+| 15:15–15:30 | Break                                                                   | —                                                                                                         |
+| 15:30–16:30 | ML workflow & project structure                                         | Walk through directory layout, data pipeline, reproducibility, how we will build the forecast system     |
+| 16:30–17:00 | Prep for Day 5                                                          | Define target variable (rainfall), define predictors (climate indices, reanalysis fields, etc.)          |
+
+**End-of-day ability:**  
+Everyone can generate a map for GHA, mask data to an AOI, and explain what the ML model will try to predict and why.
 
 ---
 
-**Ready to transform climate forecasting in the Greater Horn of Africa? Let's get started! 🌍**
+## 📅 Day 5 — ML-based Subseasonal & Seasonal Prediction (Capstone)  
+**Main goal:** Build the full pipeline: data prep → EDA → stationarity check → model training → evaluation.
+
+**Reference material:**  
+All in `day5/`  
+- `day5/01-ml-based-s2s-prediction.md` → Download & preprocess observations (e.g. CHIRPS rainfall)  
+- `day5/02-ml-based-s2s-prediction.md` → Download & preprocess predictors  
+- `day5/03-ml-based-s2s-prediction.md` → Exploratory data analysis (EDA)  
+- `day5/04-ml-based-s2s-prediction.md` → Stationarity / stability checks  
+- `day5/05-ml-based-s2s-prediction.md` → Train and evaluate ML model
+
+| Time        | Session / Topic                                                                     | Description                                                                                                 |
+|-------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| 09:00–09:20 | Day 4 recap                                                                         | Roles of predictors (drivers) and predictand (rainfall index)                                              |
+| 09:20–10:30 | Step 1: Download & preprocess rainfall data (Notebook 01)                           | Clean CHIRPS-like data, clip to region, aggregate appropriately                                           |
+| 10:30–10:45 | Break                                                                               | —                                                                                                           |
+| 10:45–11:45 | Step 2: Download & preprocess predictors (Notebook 02)                              | Large-scale drivers (e.g. reanalysis, indices); temporal alignment                                        |
+| 11:45–12:30 | Step 3: Exploratory Data Analysis (Notebook 03)                                     | Correlations, lead–lag signals, spatial/temporal patterns                                                  |
+| 12:30–13:30 | Lunch                                                                               | —                                                                                                           |
+| 13:30–14:30 | Step 4: Stationarity & sanity checks (Notebook 04)                                  | Trend / drift / bias inspection before modeling                                                            |
+| 14:30–15:30 | Step 5: Train ML model & generate predictions (Notebook 05)                         | Fit model(s), make forecasts, evaluate skill                                                               |
+| 15:30–15:45 | Break                                                                               | —                                                                                                           |
+| 15:45–16:30 | Interpreting skill & limitations                                                    | What is “good enough”? Forecast usability for NMHS decision support                                       |
+| 16:30–17:00 | Wrap-up, next steps for operations                                                  | How to adapt this pipeline at your NMHS / institution                                                      |
+
+**End-of-day ability:**  
+Participants have seen the full operational-style pipeline:
+1. Get data  
+2. Prepare predictors/targets  
+3. Explore and validate  
+4. Train model  
+5. Assess skill for climate services
+
+---
+
+## ✅ After the Workshop You Will Be Able To
+
+- Load, clean, analyze, and visualize climate data (station + gridded) using Python  
+- Produce geospatial climate maps for specific regions in the GHA  
+- Understand how an ML-based seasonal or subseasonal forecast product is built  
+- Reproduce the full workflow end-to-end using the provided notebooks and project structure
+
+---
+
+## 🔗 Helpful Links
+
+- 💻 [Setup & Environment](setup.md)  
+- 📘 [Prerequisites](prerequisites.md)  
+- 🤝 [Collaboration / Shared Notes](collaboration.md)  
+- 📚 [FAQ](faq.md)  
+- 📜 [Code of Conduct](code_of_conduct.md)
