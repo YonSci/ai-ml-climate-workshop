@@ -52,8 +52,8 @@ h1:first-child {
   <div class="overview-content">
     <div class="workshop-intro">
       <p style="font-size:1.05rem;margin:0;">
-        🚀 <strong>Workshop — AI &amp; Machine Learning for Weather and Climate Prediction</strong><br>
-        Organized by <strong>ILRI</strong> in collaboration with <strong>EMI</strong>. This intensive, hands-on training is designed to build advanced technical capacity within the Ethiopian Meteorological Institute by focusing on the use of AI and ML for climate analysis, forecasting, early warning, and decision support.
+        🚀 <strong>Workshop AI &amp; Machine Learning for Weather and Climate Prediction</strong><br>
+        Organized by <strong> International Livestock Research Institute (ILRI) </strong> in collaboration with <strong>ai-ml-climate-workshop (EMI) </strong>. This intensive, hands-on training is designed to build advanced technical capacity within the Ethiopian Meteorological Institute by focusing on the use of AI and ML for climate analysis, forecasting, early warning, and decision support.
       </p>
     </div>
     <div class="target-audience-highlight">

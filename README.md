@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Material for MkDocs](https://img.shields.io/badge/material-mkdocs-teal)](https://squidfunk.github.io/mkdocs-material/)
 
-A comprehensive training website for **Python and AI/ML applications in meteorology and climate science**, specifically designed for Ethiopian Meteorological Institute.
+A comprehensive training website for **Python and AI/ML applications in meteorology and climate**, specifically designed for Ethiopian Meteorological Institute.
 
 ## 📖 About
 
@@ -53,7 +53,7 @@ ai-ml-climate-workshop/
 ```
 
 ## **Open in browser**
-   Navigate to `http://127.0.0.1:8000/python-ml-gha-workshop/`
+   Navigate to `https://yonsci.github.io/ai-ml-climate-workshop/`
 
 
 ## 📝 License
@@ -63,10 +63,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 📞 Contact & Support
 
 - **Facilitator**: [Yonas Mersha](mailto:yonas.mersha14@gmail.com)
-- **GitHub**: [@YonSci](https://github.com/YonSci)
-- **LinkedIn**: [Yonas Mersha](https://www.linkedin.com/in/yonas-mersha-baab561b5/)
-
-
 
 **🌍 Transforming weather forecasting and climate prediction through cutting-edge technology and data science**
 

@@ -2,12 +2,12 @@
 site_name: Python and AI/ML for Climate
 site_description: Training workshop on Python, xarray/NetCDF, and Intro AI/ML for Weather & Climate in the GHA region
 site_author: Yonas Mersha
-site_url: https://yonsci.github.io/python-ml-gha-workshop/   # <-- project URL with trailing slash
+site_url: https://yonsci.github.io/ai-ml-climate-workshop/   # <-- project URL with trailing slash
 # site_url is used for canonical links & sitemap. Remove site_base_url; MkDocs doesn't use it.
 
 # --- Repository (shows "Edit this page" and repo links) ---
-repo_url: https://github.com/YonSci/python-ml-gha-workshop
-repo_name: YonSci/python-ml-gha-workshop
+repo_url: https://github.com/YonSci/ai-ml-climate-workshop
+repo_name: YonSci/ai-ml-climate-workshop
 edit_uri: ""   # Disable "Edit this page" links completely
 
 # --- Build behaviour ---
