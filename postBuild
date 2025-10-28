@@ -1,0 +1,111 @@
+#!/bin/bash
+
+# Create data directory
+mkdir -p data/sample
+
+# Create a simple Python script to download sample data
+echo "Setting up sample climate data..."
+cat > download_sample_data.py << 'EOF'
+import os
+import numpy as np
+import pandas as pd
+import xarray as xr
+
+# Create sample data directory
+os.makedirs('data/sample', exist_ok=True)
+
+# Create sample temperature data
+print("Creating sample temperature dataset...")
+time = pd.date_range('2020-01-01', '2023-12-31', freq='D')
+lat = np.linspace(-5, 15, 20)  # GHA region
+lon = np.linspace(35, 50, 20)  # GHA region
+
+# Create sample temperature data with realistic patterns
+np.random.seed(42)
+temp_data = 25 + 10 * np.sin(2 * np.pi * np.arange(len(time)) / 365.25) + \
+            np.random.normal(0, 2, (len(time), len(lat), len(lon)))
+
+temp_ds = xr.Dataset({
+    'temperature': (['time', 'lat', 'lon'], temp_data)
+}, coords={
+    'time': time,
+    'lat': lat,
+    'lon': lon
+})
+
+temp_ds.attrs['title'] = 'Sample Temperature Data for GHA Region'
+temp_ds.attrs['description'] = 'Synthetic daily temperature data for training purposes'
+temp_ds.temperature.attrs['units'] = 'degrees_C'
+temp_ds.temperature.attrs['long_name'] = 'Daily Mean Temperature'
+
+temp_ds.to_netcdf('data/sample/sample_temperature_gha.nc')
+print("✓ Sample temperature data created")
+
+# Create sample precipitation data
+print("Creating sample precipitation dataset...")
+precip_data = np.maximum(0, np.random.exponential(2, (len(time), len(lat), len(lon))))
+# Add seasonal pattern
+seasonal_pattern = 1 + 0.5 * np.sin(2 * np.pi * np.arange(len(time)) / 365.25 + np.pi/2)
+precip_data = precip_data * seasonal_pattern[:, np.newaxis, np.newaxis]
+
+precip_ds = xr.Dataset({
+    'precipitation': (['time', 'lat', 'lon'], precip_data)
+}, coords={
+    'time': time,
+    'lat': lat,
+    'lon': lon
+})
+
+precip_ds.attrs['title'] = 'Sample Precipitation Data for GHA Region'
+precip_ds.attrs['description'] = 'Synthetic daily precipitation data for training purposes'
+precip_ds.precipitation.attrs['units'] = 'mm/day'
+precip_ds.precipitation.attrs['long_name'] = 'Daily Precipitation'
+
+precip_ds.to_netcdf('data/sample/sample_precipitation_gha.nc')
+print("✓ Sample precipitation data created")
+
+# Create sample station data
+print("Creating sample station dataset...")
+stations = pd.DataFrame({
+    'station_id': ['ETH001', 'ETH002', 'KEN001', 'KEN002', 'UGA001'],
+    'station_name': ['Addis Ababa', 'Dire Dawa', 'Nairobi', 'Mombasa', 'Kampala'],
+    'latitude': [9.03, 9.59, -1.29, -4.04, 0.35],
+    'longitude': [38.74, 41.85, 36.82, 39.66, 32.58],
+    'elevation': [2355, 1200, 1795, 55, 1190]
+})
+
+# Generate sample time series for each station
+station_data = []
+for _, station in stations.iterrows():
+    station_ts = pd.DataFrame({
+        'date': time,
+        'station_id': station['station_id'],
+        'temperature': 20 + 8 * np.sin(2 * np.pi * np.arange(len(time)) / 365.25) + 
+                      np.random.normal(0, 3, len(time)),
+        'precipitation': np.maximum(0, np.random.exponential(1.5, len(time))),
+        'humidity': 50 + 20 * np.sin(2 * np.pi * np.arange(len(time)) / 365.25) + 
+                   np.random.normal(0, 10, len(time))
+    })
+    station_data.append(station_ts)
+
+all_station_data = pd.concat(station_data, ignore_index=True)
+all_station_data.to_csv('data/sample/sample_station_data.csv', index=False)
+print("✓ Sample station data created")
+
+stations.to_csv('data/sample/station_metadata.csv', index=False)
+print("✓ Station metadata created")
+
+print("\nSample data setup complete! Files created:")
+print("- data/sample/sample_temperature_gha.nc")
+print("- data/sample/sample_precipitation_gha.nc") 
+print("- data/sample/sample_station_data.csv")
+print("- data/sample/station_metadata.csv")
+EOF
+
+# Run the data setup script
+python download_sample_data.py
+
+# Clean up
+rm download_sample_data.py
+
+echo "Binder environment setup complete!"

@@ -5,6 +5,12 @@ hide:
 
 # 📙 Pandas for Climate and Meteorology
 
+## 🚀 Interactive Learning
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=day2%2FDay2_NumPy_Pandas_for_Climate.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
+
 # Pandas for Climate Scientists & Meteorologists
 
 ---

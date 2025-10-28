@@ -1,0 +1,28 @@
+name: climate-ml-workshop
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - xarray
+  - netcdf4
+  - cartopy
+  - geopandas
+  - scikit-learn
+  - scipy
+  - jupyter
+  - jupyterlab
+  - ipywidgets
+  - requests
+  - pooch
+  - rasterio
+  - folium
+  - plotly
+  - pip
+  - pip:
+    - chirps-data
+    - climate-indices

@@ -7,7 +7,15 @@ hide:
 
 Welcome❕   
 
-This is a practical introduction to the Python programming language, with climate and meteorology-flavored examples.  
+This is a practical introduction to the Python programming language, with climate and meteorology-flavored examples.
+
+## 🚀 Interactive Learning
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=day1%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook environment where you can run all the code examples in this lesson!**
+
+> 💡 **Tip**: The Binder environment includes all necessary packages and sample climate data. It may take 1-2 minutes to start up the first time.  
 
 Python is:  
 - An interpreted, high-level language  

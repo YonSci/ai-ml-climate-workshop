@@ -18,6 +18,7 @@ Build technical capacity of Ethiopian Meteorological Institute (EMI) so they can
 
 - **📚 Interactive Learning Materials**: Comprehensive lessons on Python, xarray/NetCDF, and AI/ML
 - **💻 Hands-on Approach**: Jupyter Notebook-based exercises and real-world examples
+- **🚀 Binder Integration**: Launch interactive Jupyter environments with zero setup required
 - **🤝 Real-time Collaboration**: Integrated collaborative platform for Q&A and discussions
 - **📱 Responsive Design**: Mobile-friendly interface with modern Material Design
 - **🎨 Professional Styling**: Clean, accessible design with consistent branding
@@ -42,10 +43,17 @@ ai-ml-climate-workshop/
 │   ├── index.md                   # Homepage content
 │   ├── setup.md                   # Installation and setup guide
 │   └── styles.css                 # Custom styling
+├── notebooks/                     # Interactive Jupyter notebooks
+│   ├── Python_Basics_for_Climate_and_Meteorology_Workshop1.ipynb
+│   ├── Python_Setup_for_Climate_and_Meteorology_Workshop.ipynb
+│   └── Day2_NumPy_Pandas_for_Climate.ipynb
 ├── overrides/                     # Theme customizations
 │   └── partials/
 │       └── footer.html            # Custom footer with partner logos
 ├── site/                          # Generated static site (auto-generated)
+├── environment.yml                # Conda environment for Binder
+├── binder-requirements.txt        # Pip requirements for Binder
+├── postBuild                      # Binder post-installation script
 ├── mkdocs.yml                     # MkDocs configuration
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # This file
