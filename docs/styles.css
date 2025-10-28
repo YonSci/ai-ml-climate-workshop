@@ -2963,3 +2963,51 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   color: #ffffff !important;  /* keep white on hover/active */
   text-decoration: none;
 }
+
+/* --- MOBILE NAV FIXES ------------------------------------ */
+
+/* 1. Make sure the hamburger ("☰") menu button is visible on mobile */
+@media (max-width: 76.1875em) { /* same breakpoint Material uses */
+  /* This is the little menu toggle button in the header */
+  .md-header__button.md-header-nav-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* If any custom CSS hid ALL header buttons on mobile, undo that */
+  .md-header__button {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Keep the title next to the hamburger so it looks normal */
+  .md-header__title {
+    display: flex !important;
+    align-items: center;
+    gap: .5rem;
+  }
+}
+
+/* 2. Hide the big desktop tab bar on phones (Material does this by default,
+   but if we changed flex/positioning earlier we want to force it) */
+@media (max-width: 76.1875em) {
+  .md-tabs {
+    display: none !important;
+  }
+}
+
+/* 3. On desktop, keep the custom bigger nav tabs you styled */
+@media (min-width: 76.1875em) {
+  .md-tabs {
+    display: flex !important;
+  }
+}
+
+/* 4. Safety: don't accidentally hide the drawer overlay */
+.md-nav {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
