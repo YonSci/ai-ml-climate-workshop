@@ -2966,48 +2966,130 @@ button, a, .md-button, .md-nav__link, .md-header__button {
 
 /* --- MOBILE NAV FIXES ------------------------------------ */
 
-/* 1. Make sure the hamburger ("☰") menu button is visible on mobile */
-@media (max-width: 76.1875em) { /* same breakpoint Material uses */
-  /* This is the little menu toggle button in the header */
-  .md-header__button.md-header-nav-toggle {
+/* --- MOBILE NAV / HAMBURGER RESTORE ----------------------- */
+/* Material switches to "drawer + hamburger" below ~1219px.
+   Your custom header overrides and big tab bar are preventing that.
+   This block restores the default mobile behavior.
+*/
+
+@media (max-width: 76.1875em) {
+
+  /* 1. Make sure the main header bar actually shows on mobile */
+  .md-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+  }
+
+  /* 2. Fix the internal flex layout of the header */
+  .md-header__inner {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
-    visibility: visible !important;
-    opacity: 1 !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    min-height: 3.5rem !important;
+    padding: 0 .75rem !important;
+    gap: .5rem !important;
   }
 
-  /* If any custom CSS hid ALL header buttons on mobile, undo that */
-  .md-header__button {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  /* Keep the title next to the hamburger so it looks normal */
+  /* 3. Left side of header: hamburger + title */
+  .md-header__start,
+  .md-header__topic,
   .md-header__title {
     display: flex !important;
-    align-items: center;
-    gap: .5rem;
+    align-items: center !important;
+    flex-shrink: 1 !important;
+    min-width: 0;
+    gap: .5rem !important;
+    color: #fff !important;
   }
-}
 
-/* 2. Hide the big desktop tab bar on phones (Material does this by default,
-   but if we changed flex/positioning earlier we want to force it) */
-@media (max-width: 76.1875em) {
+  /* 4. The hamburger button ("☰") */
+  .md-header__button.md-header-nav-toggle {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Sometimes custom CSS hid all header buttons; undo that */
+  .md-header__button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Make sure the SVG icon (the three lines) is readable */
+  .md-header__button.md-header-nav-toggle svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    stroke: #fff !important;
+    fill: none !important;
+  }
+
+  /* 5. Right side of header: GitHub link / ILRI logo block */
+  .md-header__end {
+    display: flex !important;
+    align-items: center !important;
+    gap: .5rem !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    max-width: 50% !important;
+  }
+
+  /* If your ILRI logo container is very wide, shrink it on phones */
+  .header-partner,
+  .header-partner img {
+    max-height: 48px !important;
+    max-width: 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: .5rem !important;
+    padding: .25rem !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.25) !important;
+  }
+
+  /* 6. HIDE the horizontal desktop tab bar on mobile.
+        (Material does this by default, but previous overrides forced it visible.) */
   .md-tabs {
     display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 7. Make sure the slide-out drawer nav can appear */
+  .md-nav {
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
 
-/* 3. On desktop, keep the custom bigger nav tabs you styled */
+/* --- DESKTOP REASSURANCE ---------------------------------- */
+/* Above the breakpoint, we keep your nice, large tab bar. */
 @media (min-width: 76.1875em) {
+
+  /* show the horizontal nav tabs on desktop */
   .md-tabs {
     display: flex !important;
+    visibility: visible !important;
+    height: auto !important;
   }
-}
 
-/* 4. Safety: don't accidentally hide the drawer overlay */
-.md-nav {
-  visibility: visible !important;
-  opacity: 1 !important;
+  /* optional: keep header tidy on desktop (logo / GitHub / etc.) */
+  .md-header__inner {
+    align-items: center !important;
+  }
+
+  /* hamburger is not needed on desktop, so hide it again */
+  .md-header__button.md-header-nav-toggle {
+    display: none !important;
+  }
 }
