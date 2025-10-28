@@ -1,5 +1,5 @@
 # --- Site metadata ---
-site_name: Python and AI/ML for Climate
+site_name: AI/ML for Climate
 site_description: Training workshop on Python, xarray/NetCDF, and Intro AI/ML for Weather & Climate in the GHA region
 site_author: Yonas Mersha
 site_url: https://yonsci.github.io/ai-ml-climate-workshop/   # <-- project URL with trailing slash

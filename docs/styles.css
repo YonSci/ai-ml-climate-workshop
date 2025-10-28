@@ -2605,3 +2605,346 @@ button, a, .md-button, .md-nav__link, .md-header__button {
     padding: 0.4rem 0.8rem;
   }
 }
+
+
+/* Make header layout predictable */
+.md-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  min-height: 56px;
+  box-sizing: border-box;
+}
+
+/* Left block: burger + icon + title */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0; /* important for text truncation */
+}
+
+/* Keep the site title in the green bar, single line, and prevent it from pushing content down */
+.header-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--md-primary-bg-color, #fff);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60vw; /* don't let it run into the right side */
+}
+
+/* Right block: partner logo + dark mode + search + repo */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Partner logo styling (the white rounded card you want) */
+.partner-logo-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 4px 6px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  min-width: 36px;
+}
+
+.partner-logo-card img {
+  max-height: 28px;
+  max-width: 60px;
+  display: block;
+}
+
+/* --- MOBILE BEHAVIOR --- */
+@media (max-width: 768px) {
+  /* Hide the partner logo on small screens so it doesn't wrap down into the page */
+  .partner-logo-card {
+    display: none;
+  }
+
+  /* Reduce title font a bit so it fits in header */
+  .header-title {
+    font-size: 0.8rem;
+    max-width: 55vw;
+  }
+
+  /* Tighter spacing on the right controls */
+  .header-right {
+    gap: 0.25rem;
+  }
+}
+
+
+
+
+
+
+
+/* === HEADER LAYOUT FIX === */
+
+/* Make the top header row one clean flex row */
+.custom-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Left cluster = logo + title */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.header-title .site-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* kill that frosted circular look on the LEFT site logo
+   so it doesn't fight with your partner badge look */
+.md-header__button.md-logo {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Make sure the site logo itself doesn't try to be circular */
+.md-header__button.md-logo img {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Center cluster = search bar */
+.header-center {
+  flex: 1 1 auto;                /* <-- this lets search take the middle space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+/* keep Material's search from jumping to a new line */
+.header-center .md-search {
+  min-width: 220px;
+  max-width: 360px;
+  width: 100%;
+}
+
+/* Right cluster = repo link + ILRI logo */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;             /* <-- pushes this whole block to the far right */
+  flex-shrink: 0;
+}
+
+/* GitHub link styling in the header */
+.repo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.repo-link:hover {
+  opacity: 0.8;
+}
+
+.repo-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Partner logo badge on the right */
+.header-partner-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+}
+
+.partner-logo-img {
+  display: block;
+  height: 48px;     /* size control */
+  width: auto;
+  max-height: 48px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+
+/* === HEADER LAYOUT FIX === */
+
+/* Make the top header row one clean flex row */
+.custom-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Left cluster = logo + title */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.header-title .site-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* kill that frosted circular look on the LEFT site logo
+   so it doesn't fight with your partner badge look */
+.md-header__button.md-logo {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Make sure the site logo itself doesn't try to be circular */
+.md-header__button.md-logo img {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  object-fit: contain;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Center cluster = search bar */
+.header-center {
+  flex: 1 1 auto;                /* <-- this lets search take the middle space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+/* keep Material's search from jumping to a new line */
+.header-center .md-search {
+  min-width: 220px;
+  max-width: 360px;
+  width: 100%;
+}
+
+/* Right cluster = repo link + ILRI logo */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;             /* <-- pushes this whole block to the far right */
+  flex-shrink: 0;
+}
+
+/* GitHub link styling in the header */
+.repo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.repo-link:hover {
+  opacity: 0.8;
+}
+
+.repo-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Partner logo badge on the right */
+.header-partner-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+}
+
+.partner-logo-img {
+  display: block;
+  height: 48px;     /* size control */
+  width: auto;
+  max-height: 48px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+/* On very small screens, stack nicely:
+   - search drops under title so nothing overflows off-screen */
+@media (max-width: 900px) {
+  .custom-header-row {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  .header-center {
+    order: 3;
+    flex: 1 0 100%;
+    justify-content: flex-start;
+  }
+
+  .header-right {
+    order: 2;
+    margin-left: 0;
+  }
+}
+

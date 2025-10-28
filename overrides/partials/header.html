@@ -1,0 +1,64 @@
+{% set ilri_logo = base_url ~ '/assets/ILRI.png' %}
+
+<header class="md-header" data-md-component="header">
+  <div class="md-header__inner custom-header-row">
+
+    <!-- LEFT CLUSTER: site logo + title -->
+
+    <div class="header-left">
+      <!-- default Material logo button -->
+      <a href="{{ base_url }}/" class="md-header__button md-logo" aria-label="{{ config.site_name }}">
+        {% if config.theme.logo %}
+          <img src="{{ base_url }}/{{ config.theme.logo }}" alt="{{ config.site_name }}">
+        {% else %}
+          <span class="md-icon">
+            {% include ".icons/material/book-open-variant.svg" %}
+          </span>
+        {% endif %}
+      </a>
+
+      <!-- site title text -->
+      <div class="header-title">
+        <span class="site-title">{{ config.site_name }}</span>
+      </div>
+    </div>
+
+    <!-- MIDDLE CLUSTER: search -->
+    <div class="header-center">
+      {% if "search" in config.plugins %}
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          {% include ".icons/material/magnify.svg" %}
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+          {% include "partials/search.html" %}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- RIGHT CLUSTER: repo + ILRI -->
+    <div class="header-right">
+      {% if config.repo_url %}
+      <a
+        href="{{ config.repo_url }}"
+        class="repo-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="md-icon repo-icon">
+          {% include ".icons/fontawesome/brands/github.svg" %}
+        </span>
+        <span class="repo-text">{{ config.repo_name }}</span>
+      </a>
+      {% endif %}
+
+      <!-- <div class="header-partner-right">
+        <img
+          src="{{ ilri_logo }}"
+          alt="ILRI"
+          class="partner-logo-img"
+        />
+      </div> -->
+    </div>
+
+  </div>
+</header>
