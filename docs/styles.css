@@ -3710,16 +3710,21 @@ button, a, .md-button, .md-nav__link, .md-header__button {
     color: #fff !important;
   }
 
-  /* 4. The hamburger button ("☰") */
-  .md-header__button.md-header-nav-toggle {
+  /* 4. The hamburger button ("☰") - works with label[for="__drawer"] */
+  .md-header__button.md-icon[for="__drawer"],
+  label[for="__drawer"].md-header__button {
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
     align-items: center !important;
     justify-content: center !important;
     flex-shrink: 0 !important;
+    cursor: pointer !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0.25rem !important;
   }
 
   /* Sometimes custom CSS hid all header buttons; undo that */
@@ -3730,11 +3735,12 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   }
 
   /* Make sure the SVG icon (the three lines) is readable */
-  .md-header__button.md-header-nav-toggle svg {
+  label[for="__drawer"].md-header__button svg,
+  .md-header__button.md-icon[for="__drawer"] svg {
     width: 1.5rem !important;
     height: 1.5rem !important;
-    stroke: #fff !important;
-    fill: none !important;
+    fill: #fff !important;
+    stroke: none !important;
   }
 
   /* 5. Right side of header: GitHub link / ILRI logo block */

@@ -3,9 +3,16 @@
 <header class="md-header" data-md-component="header">
   <div class="md-header__inner custom-header-row">
 
-    <!-- LEFT CLUSTER: site logo + title -->
+    <!-- LEFT CLUSTER: hamburger + site logo + title -->
 
     <div class="header-left">
+      <!-- HAMBURGER BUTTON (for mobile drawer navigation) -->
+      <label class="md-header__button md-icon" for="__drawer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/>
+        </svg>
+      </label>
+
       <!-- default Material logo button -->
       <a href="{{ base_url }}/" class="md-header__button md-logo" aria-label="{{ config.site_name }}">
         {% if config.theme.logo %}
