@@ -69,7 +69,7 @@ Once you've completed this quiz:
 1. Review array operations you found challenging
 2. Practice with real climate datasets
 3. Move on to the Pandas lesson
-4. Check the [Assessments page](../../assessments/) for comprehensive evaluations
+4. Check the [Assessments page](../assessments.md) for comprehensive evaluations
 
 ---
 

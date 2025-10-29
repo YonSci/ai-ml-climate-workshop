@@ -69,7 +69,7 @@ Once you've completed this quiz:
 1. Review any questions you got wrong
 2. Go back to the lesson material if needed
 3. Continue to the next day's content
-4. Check out the [Assessments page](../../assessments/) for more quizzes
+4. Check out the [Assessments page](../assessments.md) for more quizzes
 
 ---
 
