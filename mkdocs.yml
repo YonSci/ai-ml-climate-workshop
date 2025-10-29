@@ -98,6 +98,7 @@ nav:
           - Stationarity Test: day5/04-ml-based-s2s-prediction.md
           - ML Model Training: day5/05-ml-based-s2s-prediction.md
   - Collaboration: collaboration.md
+  - Assessments: assessments.md
   - Resources: resources.md
   - Downloads: downloads.md
   - FAQ: faq.md
@@ -143,6 +144,7 @@ extra_css:
   - styles.css
 extra_javascript:
   - js/extra.js
+  - js/quiz-system.js
 
 # --- Copyright footer ---
 copyright: >
