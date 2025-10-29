@@ -34,10 +34,10 @@ Python emphasizes:
 ## 📚 Contents 
 
 [0. Basic Syntax and Structure](#0-basic-syntax-and-structure)  
-&nbsp;&nbsp;• [0.1 Keywords](#01-keywords)  
-&nbsp;&nbsp;• [0.2 Comments](#02-comments-in-python)  
-&nbsp;&nbsp;• [0.3 Indentation](#03-indentation)  
-&nbsp;&nbsp;• [0.4 Docstrings](#04-docstrings)  
+&nbsp;&nbsp;• [0.1 Keywords](#keywords)  
+&nbsp;&nbsp;• [0.2 Comments](#comments-in-python)  
+&nbsp;&nbsp;• [0.3 Indentation](#indentation)  
+&nbsp;&nbsp;• [0.4 Docstrings](#docstrings)  
 
 [1. Variables and Data Types](#1-variables-and-data-types)  
 &nbsp;&nbsp;• [1.1 Variables](#11-variables)  
@@ -92,9 +92,10 @@ import os
 ```
 
 ---
- ## Keywords
 
- Keywords are the reserved words in Python and can't be used as an identifier
+## Keywords
+
+Keywords are the reserved words in Python and can't be used as an identifier
 
 ```python
 
