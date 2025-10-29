@@ -5,8 +5,6 @@ hide:
 
 # 📡 Xarray and NetCDF for Climate and Meteorology
 
-# Xarray for Climate Scientists & Meteorologists
-
 - Xarray is an efficient & useful package to read, edit, and display spatial data.
 
 - Xarray organizes gridded, multi-dimensional, large datasets and metadata in a human friendly format.

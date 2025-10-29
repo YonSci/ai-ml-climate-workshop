@@ -11,7 +11,6 @@ hide:
 
 **Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
 
-# NumPy for Climate Scientists & Meteorologists
 
 This notebook teaches NumPy skills mapped to climate workflows with fully synthetic arrays.
 

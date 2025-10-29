@@ -5,11 +5,10 @@ hide:
 
 # 🌦 ML-based Subseasonal & Seasonal Prediction
 
-## Part 2 — Downloading and Processing Predictors (Climate Drivers / Forcing Fields)
 
-###  Monthly Climate/Ocean Indices from Physical Sciences Laboratory (PSL), NOAA
+##  Monthly Climate/Ocean Indices from Physical Sciences Laboratory (PSL), NOAA
 
-### Ocean Time-series: ENSO Indices
+## Ocean Time-series: ENSO Indices
 
 - Source: NOAA Extended Reconstructed SST V5
 - Temporal Resolution: Monthly  

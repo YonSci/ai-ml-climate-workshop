@@ -7,7 +7,6 @@ hide:
 
 ---
 
-## Part 5 — Model Training, Forecast Skill & Interpretation
 
 Now that the data is cleaned, checked for stationarity, and engineered, we can:
 1. Split the data into training / validation / testing by time,

@@ -5,9 +5,6 @@ hide:
 
 # 🌦 ML-based Subseasonal & Seasonal Prediction
 
-
-## Part 3 — Exploratory Data Analysis (EDA)
-
 In this section we explore the prepared predictors and target data:
 
 - Are there missing values?

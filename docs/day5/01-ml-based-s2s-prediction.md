@@ -5,9 +5,6 @@ hide:
 
 # 🌦 ML-based Subseasonal & Seasonal Prediction
 
-## Part 1 — Downloading and Preprocessing CHIRPS Rainfall Data
-
-
 ## 🚀 Interactive Learning
 
 
@@ -16,7 +13,7 @@ hide:
 **Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
 
 
-# Rainfall Data Acquisition and Processing
+##  Rainfall Data Acquisition and Processing
 
  - Download daily CHIRPS Rainfall data from 1981–2024
 

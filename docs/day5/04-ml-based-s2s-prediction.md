@@ -7,7 +7,6 @@ hide:
 
 ---
 
-## Part 4 — Stationarity & Detrending Checks
 
 Before we train a forecast model, we need to understand if the climate signal is approximately
 stationary over time. Many ML methods assume that the relationship between predictors and target

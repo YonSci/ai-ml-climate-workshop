@@ -6,8 +6,6 @@ hide:
 # 🧪 ML Workflow for Weather & Climate (Project Structure)
 
 
-# Project Structure for Python & Data Science/ML/AI
-
  • **Cookiecutter**   
  • **Git**  
  • **VS Code**    

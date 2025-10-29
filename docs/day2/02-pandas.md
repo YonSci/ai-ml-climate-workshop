@@ -11,7 +11,6 @@ hide:
 
 **Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
 
-# Pandas for Climate Scientists & Meteorologists
 
 ---
 A practical, beginner-friendly notebook that teaches Pandas using climate/weather examples.

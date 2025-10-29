@@ -12,14 +12,14 @@ hide:
 
 **Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
 
-Agenda
-- Learn the basics of the Matplotlib library.
-- Understand how to create various types of plots (line, bar, histogram, scatter, heatmap).
-- Customize plots with titles, labels, legends, and styles.
-- Save plots as image files (PNG, PDF, SVG, EPS, and PGF).
+## Agenda
+       - Learn the basics of the Matplotlib library.
+       - Understand how to create various types of plots (line, bar, histogram, scatter, heatmap).
+       - Customize plots with titles, labels, legends, and styles.
+       - Save plots as image files (PNG, PDF, SVG, EPS, and PGF).
 
-Introduction to Matplotlib
-- Matplotlib is a Python 2D/3D plotting library which produces scientific and publication-quality figures.
+       Introduction to Matplotlib
+       - Matplotlib is a Python 2D/3D plotting library which produces scientific and publication-quality figures.
 
 ```python
 import numpy as np
