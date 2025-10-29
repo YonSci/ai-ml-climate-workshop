@@ -7,6 +7,15 @@ hide:
 
 ## Part 1 — Downloading and Preprocessing CHIRPS Rainfall Data
 
+
+## 🚀 Interactive Learning
+
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2F01-download-preprocessing-chrips-data.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
+
+
 # Rainfall Data Acquisition and Processing
 
  - Download daily CHIRPS Rainfall data from 1981–2024

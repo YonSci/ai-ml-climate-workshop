@@ -6,7 +6,6 @@ hide:
 # 🌍 GeoPandas for Climate and Meteorology
 
 ---
-# GeoPandas for Climate Scientists & Meteorologists
 
 - A practical, hands‑on notebook introducing **GeoPandas** and the **geospatial stack** for climate & weather applications.  
 
@@ -28,6 +27,16 @@ You’ll learn how to load and inspect vector data (stations, administrative reg
 - (Optional) Save sample data to GeoJSON
 - Masking NetCDF with Shapefile [salem] 
 - Reading and Writing Shapfile/GeoJSON file
+
+
+## 🚀 Interactive Learning
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FGeopandas_for_Climate_and_Meteorology_Workshop.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
+
+
+
 
 ```python
 

@@ -6,8 +6,6 @@ hide:
 # 🗺️ Cartopy for Climate and Meteorology
 
 
-# Cartopy for Climate Scientists & Meteorologists
-
 This hands-on notebook teaches **Cartopy** for climate & weather mapping using realistic, self-contained examples.
 
 **You will learn to:**
@@ -19,6 +17,15 @@ This hands-on notebook teaches **Cartopy** for climate & weather mapping using r
 - Add **gridlines and tick labels**
 - Read **Natural Earth** shapefiles at low resolution (110m) directly
 - Combine Cartopy with **Matplotlib** (subplots, colorbars)
+
+
+## 🚀 Interactive Learning
+
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FCartopy_for_Climate_and_Meteorology_Workshop.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
+
 
 
 ## Environment & Installation

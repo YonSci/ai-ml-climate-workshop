@@ -7,7 +7,7 @@ hide:
 
 ## 🚀 Interactive Learning
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FDay2_NumPy_Pandas_for_Climate.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FNumpy_for_Climate_and_Meteorology_Workshop.ipynb)
 
 **Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
 

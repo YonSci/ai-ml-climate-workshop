@@ -5,8 +5,12 @@ hide:
 
 # 📊 Matplotlib for Climate and Meteorology
 
-# Matplotlib for Climate Scientists & Meteorologists
 
+## 🚀 Interactive Learning
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FMatplotlib_for_Climate_and_Meteorology_Workshop.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
 
 Agenda
 - Learn the basics of the Matplotlib library.

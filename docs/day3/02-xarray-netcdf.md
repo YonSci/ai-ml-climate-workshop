@@ -32,6 +32,17 @@ Some Applications:
 - SPI (Standardized Precipitation Index)
 - Percent of normal maps
 
+
+
+## 🚀 Interactive Learning
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FXarray_for_Climate_and_Meteorology_Workshop.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
+
+
+
+
 ```python
 # Set working directory 
 

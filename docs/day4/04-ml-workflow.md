@@ -20,6 +20,17 @@ A logical, reasonably standardized but flexible **project structure** for doing 
 A well-structured project isn’t just about tidiness it **saves time**, **reduces errors**, and lets you focus on solving hard problems.
 
 
+
+## 🚀 Interactive Learning
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FProject_Structure_for_Climate_and_Meteorology_Workshop.ipynb)
+
+**Click the Binder button above to launch an interactive Jupyter notebook for NumPy and Pandas climate data analysis!**
+
+
+
+
+
 ## Prerequisites
 - Python 3.10+
 - pip / pipx
