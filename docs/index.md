@@ -1,8 +1,6 @@
 ---
 hide:
-  - navigation
   - toc
-  - title
 ---
 
 <style>
@@ -34,8 +32,13 @@ h1:first-child {
   max-width: none;
 }
 
-/* Hide sidebars on home page */
-.md-sidebar {
+/* Hide only left sidebar on home page, keep top navigation visible */
+.md-sidebar--primary {
+  display: none !important;
+}
+
+/* Also hide right sidebar (TOC) on home page */
+.md-sidebar--secondary {
   display: none !important;
 }
 </style>
