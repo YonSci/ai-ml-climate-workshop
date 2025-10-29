@@ -32,14 +32,25 @@ h1:first-child {
   max-width: none;
 }
 
-/* Hide only left sidebar on home page, keep top navigation visible */
-.md-sidebar--primary {
-  display: none !important;
+/* Hide sidebars on DESKTOP only - allow them on mobile for drawer navigation */
+@media (min-width: 76.25em) {
+  /* Hide left sidebar on home page (desktop only) */
+  .md-sidebar--primary {
+    display: none !important;
+  }
+  
+  /* Hide right sidebar (TOC) on home page (desktop only) */
+  .md-sidebar--secondary {
+    display: none !important;
+  }
 }
 
-/* Also hide right sidebar (TOC) on home page */
-.md-sidebar--secondary {
-  display: none !important;
+/* On mobile, ensure the drawer can open when hamburger is clicked */
+@media (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    /* Let Material handle the drawer visibility */
+    display: block !important;
+  }
 }
 </style>
 
