@@ -3,6 +3,8 @@ title: Assessments & Quizzes
 description: Test your knowledge with interactive quizzes
 ---
 
+<script src="../js/quiz-system.js"></script>
+
 # 🎯 Workshop Assessments
 
 Test your understanding of Python, data analysis, and machine learning concepts through our interactive quizzes. Each quiz provides instant feedback and helps track your progress throughout the workshop.
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div style="margin-left: 1rem;">
-      <a href="quizzes/python-basics/" class="md-button md-button--primary">Take Quiz</a>
+      <a href="../quizzes/python-basics/" class="md-button md-button--primary">Take Quiz</a>
     </div>
   </div>
   <div id="python-basics-status" style="margin-top: 1rem;"></div>
@@ -102,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     <div style="margin-left: 1rem;">
-      <a href="quizzes/numpy/" class="md-button md-button--primary">Take Quiz</a>
+      <a href="../quizzes/numpy/" class="md-button md-button--primary">Take Quiz</a>
     </div>
   </div>
   <div id="numpy-status" style="margin-top: 1rem;"></div>
@@ -246,8 +248,6 @@ Our assessments are designed to verify that you can:
 - Apply ML to climate prediction
 
 ---
-
-<script src="js/quiz-system.js"></script>
 
 **Ready to test your knowledge?** Start with the first quiz above! 🚀
 

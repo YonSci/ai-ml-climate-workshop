@@ -3655,7 +3655,7 @@ button, a, .md-button, .md-nav__link, .md-header__button {
 
 /* Bigger top navigation tabs */
 .md-tabs__link {
-  font-size: 1.1rem;          /* default ~0.8–0.9rem, so this is larger */
+  font-size: 0.9rem;          /* default ~0.8–0.9rem, so this is larger */
   font-weight: 500;           /* make it a bit bolder for readability */
   padding: 0.1rem 1rem;      /* vertical, horizontal spacing */
   line-height: 1.4;           /* improve legibility */

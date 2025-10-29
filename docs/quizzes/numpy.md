@@ -7,9 +7,44 @@ description: Test your understanding of NumPy arrays and operations
 
 Test your knowledge of NumPy arrays, operations, and their application to climate data analysis.
 
-<script src="numpy-data.js"></script>
+<script src="../../js/numpy-data.js"></script>
+<script src="../../js/quiz-system.js"></script>
 
 <div id="numpy-quiz" data-quiz-id="numpy"></div>
+
+<script>
+// Manual initialization with retry logic
+(function() {
+  let attempts = 0;
+  const maxAttempts = 10;
+  
+  function tryInitQuiz() {
+    attempts++;
+    
+    if (window.QuizRenderer && window.quizData && window.quizData['numpy']) {
+      const container = document.getElementById('numpy-quiz');
+      if (container && !container.querySelector('.quiz-container')) {
+        console.log('✓ Initializing NumPy Quiz');
+        new QuizRenderer(window.quizData['numpy'], 'numpy-quiz');
+      }
+    } else if (attempts < maxAttempts) {
+      // Try again in 100ms
+      setTimeout(tryInitQuiz, 100);
+    } else {
+      console.error('Failed to load quiz after', maxAttempts, 'attempts');
+      console.log('QuizRenderer:', typeof window.QuizRenderer);
+      console.log('quizData:', window.quizData);
+    }
+  }
+  
+  // Start trying to initialize
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', tryInitQuiz);
+  } else {
+    tryInitQuiz();
+  }
+})();
+</script>
 
 ---
 
@@ -34,7 +69,7 @@ Once you've completed this quiz:
 1. Review array operations you found challenging
 2. Practice with real climate datasets
 3. Move on to the Pandas lesson
-4. Check the [Assessments page](../assessments.md) for comprehensive evaluations
+4. Check the [Assessments page](../../assessments/) for comprehensive evaluations
 
 ---
 
