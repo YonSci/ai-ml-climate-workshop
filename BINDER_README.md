@@ -9,7 +9,7 @@ This repository includes full Binder integration for interactive learning! Click
 ## 📚 Available Interactive Notebooks
 
 ### Day 1: Python Fundamentals
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=notebooks%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
 
 **Topics Covered:**
 - Python syntax and data types
@@ -18,7 +18,7 @@ This repository includes full Binder integration for interactive learning! Click
 - Hands-on exercises
 
 ### Setup Guide
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=notebooks%2FPython_Setup_for_Climate_and_Meteorology_Workshop.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Setup_for_Climate_and_Meteorology_Workshop.ipynb)
 
 **Topics Covered:**
 - Python installation options
@@ -27,7 +27,7 @@ This repository includes full Binder integration for interactive learning! Click
 - Development tools
 
 ### Day 2: Scientific Python
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=notebooks%2FDay2_NumPy_Pandas_for_Climate.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FDay2_NumPy_Pandas_for_Climate.ipynb)
 
 **Topics Covered:**
 - NumPy for climate data arrays
@@ -39,8 +39,8 @@ This repository includes full Binder integration for interactive learning! Click
 
 ### Binder Configuration Files
 
-- **`environment.yml`**: Conda environment specification
-- **`binder-requirements.txt`**: Pip requirements for Binder
+- **`environment.yml`**: Conda environment specification with all dependencies
+- **`runtime.txt`**: Python version specification
 - **`postBuild`**: Post-installation script that sets up sample data
 
 ### Sample Data
@@ -53,7 +53,7 @@ The Binder environment automatically creates sample climate datasets:
 
 ### Environment Specifications
 
-**Python Version:** 3.11
+**Python Version:** 3.10
 **Key Libraries:**
 - NumPy, Pandas, Matplotlib, Seaborn
 - Xarray, NetCDF4, Cartopy, GeoPandas
@@ -102,7 +102,7 @@ If Binder is unavailable, you can also:
 
 3. **Use local Jupyter** with pip:
    ```bash
-   pip install -r binder-requirements.txt
+   pip install -r requirements.txt
    jupyter lab
    ```
 

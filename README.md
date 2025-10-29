@@ -52,7 +52,7 @@ ai-ml-climate-workshop/
 │       └── footer.html            # Custom footer with partner logos
 ├── site/                          # Generated static site (auto-generated)
 ├── environment.yml                # Conda environment for Binder
-├── binder-requirements.txt        # Pip requirements for Binder
+├── runtime.txt                    # Python version for Binder
 ├── postBuild                      # Binder post-installation script
 ├── mkdocs.yml                     # MkDocs configuration
 ├── requirements.txt               # Python dependencies

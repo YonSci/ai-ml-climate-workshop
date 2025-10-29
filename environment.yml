@@ -1,28 +1,26 @@
-name: climate-ml-workshop
+name: climate-workshop
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11
-  - numpy
-  - pandas
-  - matplotlib
-  - seaborn
-  - xarray
-  - netcdf4
-  - cartopy
+  - python=3.10
+  - numpy>=1.21.0
+  - pandas>=1.5.0
+  - matplotlib>=3.5.0
+  - seaborn>=0.11.0
+  - xarray>=2022.12.0
+  - netcdf4>=1.6.0
+  - scikit-learn>=1.2.0
+  - scipy>=1.9.0
+  - jupyter>=1.0.0
+  - jupyterlab>=3.5.0
+  - ipywidgets>=7.7.0
+  - requests>=2.25.0
+  - plotly>=5.10.0
   - geopandas
-  - scikit-learn
-  - scipy
-  - jupyter
-  - jupyterlab
-  - ipywidgets
-  - requests
-  - pooch
-  - rasterio
-  - folium
-  - plotly
-  - pip
-  - pip:
-    - chirps-data
-    - climate-indices
+  - cartopy
+  - regionmask
+  - shapely
+  - tqdm
+  - pyyaml
+
