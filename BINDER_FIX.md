@@ -41,7 +41,7 @@ Changed Python version from 3.11 to 3.10 to match the environment.yml specificat
    ```
 
 2. **Test the Binder build**:
-   - Go to: `https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD`
+   - Go to: `https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD`
    - Wait for the build to complete (may take 5-10 minutes first time)
    - Verify that the environment loads successfully
 
@@ -97,7 +97,7 @@ If you still encounter issues:
 4. **Alternative**: Use `repo2docker` locally to test the build:
    ```bash
    pip install jupyter-repo2docker
-   repo2docker https://github.com/YonSci/python-ml-gha-workshop
+   repo2docker https://github.com/YonSci/ai-ml-climate-workshop
    ```
 
 ## 📞 Support

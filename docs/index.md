@@ -261,7 +261,7 @@ This workshop will use openly available analytical and modeling tools from the c
 
 Experience hands-on learning with our interactive Jupyter notebooks! No installation required - just click and start coding.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=day1%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
 
 **Launch Interactive Environment** - Includes all lessons, sample climate data, and pre-configured Python environment.
 

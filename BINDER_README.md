@@ -9,7 +9,7 @@ This repository includes full Binder integration for interactive learning! Click
 ## 📚 Available Interactive Notebooks
 
 ### Day 1: Python Fundamentals
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2Fday1%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
 
 **Topics Covered:**
 - Python syntax and data types
@@ -17,8 +17,8 @@ This repository includes full Binder integration for interactive learning! Click
 - Climate-specific examples
 - Hands-on exercises
 
-### Setup Guide
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Setup_for_Climate_and_Meteorology_Workshop.ipynb)
+### Day 2: NumPy & Pandas
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2Fday2%2FNumpy_for_Climate_and_Meteorology_Workshop.ipynb)
 
 **Topics Covered:**
 - Python installation options
@@ -26,8 +26,8 @@ This repository includes full Binder integration for interactive learning! Click
 - Jupyter setup
 - Development tools
 
-### Day 2: Scientific Python
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FDay2_NumPy_Pandas_for_Climate.ipynb)
+### Day 3: Xarray & Matplotlib
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2Fday3%2FXarray_for_Climate_and_Meteorology_Workshop.ipynb)
 
 **Topics Covered:**
 - NumPy for climate data arrays

@@ -7,7 +7,7 @@ hide:
 
 ## 🚀 Interactive Setup Guide
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=day1%2FPython_Setup_for_Climate_and_Meteorology_Workshop.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Setup_for_Climate_and_Meteorology_Workshop.ipynb)
 
 **Click the Binder button above to launch an interactive setup guide where you can test Python installations and environments!**
 

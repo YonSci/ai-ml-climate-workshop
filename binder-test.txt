@@ -1,0 +1,12 @@
+# Binder Test File
+# This file helps verify that Binder can access the repository
+
+Repository: https://github.com/YonSci/ai-ml-climate-workshop/
+Test URL: https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD
+
+If you can see this file in Binder, the basic setup is working!
+
+Next steps:
+1. Test basic environment
+2. Test specific notebooks
+3. Check for any error messages

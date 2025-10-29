@@ -11,7 +11,7 @@ This is a practical introduction to the Python programming language, with climat
 
 ## 🚀 Interactive Learning
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/python-ml-gha-workshop/HEAD?labpath=day1%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YonSci/ai-ml-climate-workshop/HEAD?labpath=notebooks%2FPython_Basics_for_Climate_and_Meteorology_Workshop1.ipynb)
 
 **Click the Binder button above to launch an interactive Jupyter notebook environment where you can run all the code examples in this lesson!**
 

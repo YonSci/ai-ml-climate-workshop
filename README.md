@@ -1,6 +1,6 @@
 # 🌍 Python & AI/ML for Climate Prediction Training
 
-[![MkDocs](https://img.shields.io/badge/docs-mkdocs-blue)](https://yonsci.github.io/python-ml-gha-workshop/)
+[![MkDocs](https://img.shields.io/badge/docs-mkdocs-blue)](https://yonsci.github.io/ai-ml-climate-workshop/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Material for MkDocs](https://img.shields.io/badge/material-mkdocs-teal)](https://squidfunk.github.io/mkdocs-material/)
 
