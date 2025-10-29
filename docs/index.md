@@ -188,7 +188,7 @@ h1:first-child {
     <div class="module-content">
       <h4>Python Foundations</h4>
       <p>Core Python syntax, data structures, loops, and functions — no prior coding assumed.</p>
-      <p><code>day1/01-python-basics.md</code></p>
+      <p><a href="day1/01-python-basics/"><code>day1/01-python-basics.md</code></a></p>
     </div>
   </div>
 
@@ -197,7 +197,7 @@ h1:first-child {
     <div class="module-content">
       <h4>Scientific Python</h4>
       <p>NumPy for arrays and gridded data; Pandas for tables, time series, and climate station data.</p>
-      <p><code>day2/01-numpy.md</code>, <code>day2/02-pandas.md</code></p>
+      <p><a href="day2/01-numpy/"><code>day2/01-numpy.md</code></a>, <a href="day2/02-pandas/"><code>day2/02-pandas.md</code></a></p>
     </div>
   </div>
 
@@ -206,7 +206,7 @@ h1:first-child {
     <div class="module-content">
       <h4>Climate Data & Visualization</h4>
       <p>Matplotlib for plots; Xarray & NetCDF for multidimensional climate datasets such as CHIRPS/ERA5.</p>
-      <p><code>day3/01-matplotlib.md</code>, <code>day3/02-xarray-netcdf.md</code></p>
+      <p><a href="day3/01-matplotlib/"><code>day3/01-matplotlib.md</code></a>, <a href="day3/02-xarray-netcdf/"><code>day3/02-xarray-netcdf.md</code></a></p>
     </div>
   </div>
 
@@ -215,7 +215,7 @@ h1:first-child {
     <div class="module-content">
       <h4>Mapping & ML Concepts</h4>
       <p>Cartopy & GeoPandas for maps and regional masks, then ML fundamentals and workflow design.</p>
-      <p><code>day4/01-cartopy.md</code>, <code>day4/02-geopandas.md</code>, <code>day4/03-ml-intro.md</code>, <code>day4/04-ml-workflow.md</code></p>
+      <p><a href="day4/01-cartopy/"><code>day4/01-cartopy.md</code></a>, <a href="day4/02-geopandas/"><code>day4/02-geopandas.md</code></a>, <a href="day4/03-ml-intro/"><code>day4/03-ml-intro.md</code></a>, <a href="day4/04-ml-workflow/"><code>day4/04-ml-workflow.md</code></a></p>
     </div>
   </div>
 
@@ -229,7 +229,7 @@ h1:first-child {
         and skill evaluation.
       </p>
       <p>
-        <code>day5/01-ml-based-s2s-prediction.md</code> → <code>day5/05-ml-based-s2s-prediction.md</code>
+        <a href="day5/01-ml-based-s2s-prediction/"><code>day5/01-ml-based-s2s-prediction.md</code></a> → <a href="day5/05-ml-based-s2s-prediction/"><code>day5/05-ml-based-s2s-prediction.md</code></a>
       </p>
     </div>
   </div>
@@ -311,7 +311,7 @@ For more collaboration options, visit our [full collaboration guide](collaborati
 
 ## Quick Links
 
-<div class="logistics-grid" style="max-width:800px;margin:2rem auto;">
+<div class="logistics-grid" style="max-width:1200px;margin:2rem auto;">
   <div class="logistics-card">
     <div class="card-icon">💻</div>
     <h3><a href="setup/" class="calendar-link">Setup & Installation</a></h3>
@@ -325,15 +325,27 @@ For more collaboration options, visit our [full collaboration guide](collaborati
   </div>
 
   <div class="logistics-card">
-    <div class="card-icon">❓</div>
-    <h3><a href="faq/" class="calendar-link">FAQ</a></h3>
-    <p>Common questions about laptops, data, pace, and expectations.</p>
+    <div class="card-icon">📚</div>
+    <h3><a href="day1/01-python-basics/" class="calendar-link">Start Learning</a></h3>
+    <p>Begin Day 1: Python Foundations (recommended start here).</p>
   </div>
   
   <div class="logistics-card">
-    <div class="card-icon">📚</div>
-    <h3><a href="day1/01-python-basics " class="calendar-link">Tutorial</a></h3>
-    <p>Step‑by‑step workshop tutorial and exercises (recommended start here).</p>
+    <div class="card-icon">🎯</div>
+    <h3><a href="assessments/" class="calendar-link">Assessments</a></h3>
+    <p>Interactive quizzes with auto-grading and progress tracking.</p>
+  </div>
+
+  <div class="logistics-card">
+    <div class="card-icon">⬇️</div>
+    <h3><a href="downloads/" class="calendar-link">Downloads</a></h3>
+    <p>PDF versions of all lessons for offline study and reference.</p>
+  </div>
+  
+  <div class="logistics-card">
+    <div class="card-icon">❓</div>
+    <h3><a href="faq/" class="calendar-link">FAQ</a></h3>
+    <p>Common questions about laptops, data, pace, and expectations.</p>
   </div>
   
 
