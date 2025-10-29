@@ -56,7 +56,7 @@ h1:first-child {
 
 <div class="hero-banner-compact">
   <div class="hero-content">
-    <h1 class="hero-title">AI and Machine Learning for Weather and Climate Prediction</h1>
+    <h1 class="hero-title">AI and Machine Learning for Weather and Climate</h1>
   </div>
 </div>
 
