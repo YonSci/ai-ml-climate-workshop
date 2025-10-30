@@ -369,9 +369,7 @@ We'll assume a (roughly) linear relationship:
 \]
 
 Then we fit a simple linear regression:  
-\[
-\widehat{\text{rain\_ond}} = b_0 + b_1 \cdot \text{sst\_anom}
-\]
+$ \widehat{\text{rain\_ond}} = b_0 + b_1 \cdot \text{sst\_anom} $
 
 We'll interpret:
 - Slope \(b_1\): "How many mm of OND rainfall change per +1°C SST anomaly?"
