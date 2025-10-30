@@ -1061,46 +1061,48 @@ a[href*="/edit/"],
 
 /* Mobile scaling */
 @media (max-width: 480px) {
+  /* Hide all partner logos on very small screens */
   .header-partner {
-    padding: 16px 12px 8px 12px !important;
+    display: none !important;
+    visibility: hidden !important;
   }
 
   .header-partner img {
-    height: 70px;
-    max-width: 120px;
-    padding: 6px !important;
+    display: none !important;
   }
-
-
-/* Make the header bar a positioning context */
-.md-header__inner {
-  position: relative !important;
-  align-items: flex-start !important;
-  flex-wrap: nowrap !important;
 }
 
-/* Take the partner badge out of normal flow and pin it */
-.header-partner {
-  position: absolute !important;
-  top: 0.95rem;                 /* adjust vertical offset */
-  right: 1rem;                  /* distance from right edge */
-  margin-left: 0 !important;    /* don't rely on flex gap anymore */
-  z-index: 10;                  /* make sure it's above other header content */
+/* Make the header bar a positioning context - ONLY on desktop */
+@media (min-width: 769px) {
+  .md-header__inner {
+    position: relative !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+  }
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  /* Take the partner badge out of normal flow and pin it - ONLY on desktop */
+  .header-partner {
+    position: absolute !important;
+    top: 0.95rem;                 /* adjust vertical offset */
+    right: 1rem;                  /* distance from right edge */
+    margin-left: 0 !important;    /* don't rely on flex gap anymore */
+    z-index: 10;                  /* make sure it's above other header content */
 
-  padding: 24px 16px 10px 16px !important;
-  background: #ffffff !important;
-  border-radius: 8px !important;
-  border: 1px solid rgba(0,0,0,.08);
-  box-shadow: 0 4px 20px rgba(0,0,0,.25);
-  width: auto !important;
-  height: auto !important;
-  min-width: unset !important;
-  min-height: unset !important;
-  flex-shrink: 0 !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 24px 16px 10px 16px !important;
+    background: #ffffff !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,.25);
+    width: auto !important;
+    height: auto !important;
+    min-width: unset !important;
+    min-height: unset !important;
+    flex-shrink: 0 !important;
+  }
 }
 
 /* Keep the image styling you already applied */
@@ -1877,6 +1879,20 @@ button, a, .md-button, .md-nav__link, .md-header__button {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  /* Ensure body and main containers don't overflow */
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .md-main {
+    overflow-x: hidden !important;
+  }
+
+  .md-main__inner {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .hero-banner {
     padding: 3rem 1rem;
     margin: -1rem -1rem 2rem -1rem;
@@ -1906,7 +1922,7 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   }
   
   .logistics-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
   }
   
   .requirements-card {
@@ -1914,7 +1930,7 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   }
   
   .outcomes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
   }
   
   .datasets-grid {
@@ -1924,6 +1940,45 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   .cta-actions {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* Fix all headings to wrap properly */
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-typeset h4,
+  .md-typeset h5,
+  .md-typeset h6 {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+
+  /* Fix long words and URLs */
+  .md-typeset p,
+  .md-typeset li,
+  .md-typeset td {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+  }
+
+  /* Fix code blocks on mobile */
+  .md-typeset pre {
+    overflow-x: auto !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+  }
+
+  /* Ensure all cards and sections fit mobile width */
+  .overview-card,
+  .logistics-card,
+  .outcome-card,
+  .dataset-card,
+  .info-card {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -2680,6 +2735,43 @@ button, a, .md-button, .md-nav__link, .md-header__button {
   /* Tighter spacing on the right controls */
   .header-right {
     gap: 0.25rem;
+  }
+
+  /* Fix main content area padding to prevent text cutoff */
+  .md-content {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .md-content__inner {
+    padding: 0 0.5rem !important;
+    margin: 0 !important;
+  }
+
+  /* Ensure text wraps properly on mobile */
+  .md-typeset {
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+  }
+
+  /* Prevent wide elements from breaking layout */
+  .md-typeset table,
+  .md-typeset pre,
+  .md-typeset img,
+  .md-typeset iframe {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  /* Fix header partner logo overlap */
+  .header-partner {
+    position: static !important;
+    display: none !important;
+  }
+
+  .header-partner-right {
+    display: none !important;
   }
 }
 
@@ -3753,16 +3845,16 @@ button, a, .md-button, .md-nav__link, .md-header__button {
     max-width: 50% !important;
   }
 
-  /* If your ILRI logo container is very wide, shrink it on phones */
+  /* Hide ILRI logo completely on mobile to prevent overlap */
   .header-partner,
   .header-partner img {
-    max-height: 48px !important;
-    max-width: 48px !important;
-    width: 48px !important;
-    height: 48px !important;
-    border-radius: .5rem !important;
-    padding: .25rem !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,.25) !important;
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Also hide any partner logo in the main content area on mobile */
+  .partner-logo-img {
+    display: none !important;
   }
 
   /* 6. HIDE the horizontal desktop tab bar on mobile.
