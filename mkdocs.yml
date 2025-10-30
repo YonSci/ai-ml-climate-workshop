@@ -90,6 +90,7 @@ nav:
           - Geospatial Data with GeoPandas: day4/02-geopandas.md
           - Introduction to Machine Learning: day4/03-ml-intro.md
           - ML Workflow for Weather & Climate: day4/04-ml-workflow.md
+          - Linear Regression: day4/05-linear-regression.md
       - Day 5 — ML-based Subseasonal & Seasonal Prediction Use Case:
 
           - Downloading and processing CHIRPS data: day5/01-ml-based-s2s-prediction.md
