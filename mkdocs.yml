@@ -91,6 +91,10 @@ nav:
           - Introduction to Machine Learning: day4/03-ml-intro.md
           - ML Workflow for Weather & Climate: day4/04-ml-workflow.md
           - Linear Regression: day4/05-linear-regression.md
+          - Ridge Regression: day4/06-ridge-regression.md
+          - Lasso Regression: day4/07-lasso-regression.md
+          - Ridge vs Lasso: day4/08-ridge-vs-lasso.md
+          - ElasticNet Regression: day4/09-elasticnet-regression.md
       - Day 5 — ML-based Subseasonal & Seasonal Prediction Use Case:
 
           - Downloading and processing CHIRPS data: day5/01-ml-based-s2s-prediction.md
@@ -141,13 +145,28 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.snippets            # include code/markdown from files
+  - pymdownx.snippets    
+  
+  - pymdownx.arithmatex:
+      generic: true
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js        # include code/markdown from files
 
 # --- Extra assets (optional custom styles/scripts) ---
 extra_css:
   - styles.css
 extra_javascript:
   - js/extra.js
+
+
+
+
+
+
+
 
 # --- Copyright footer ---
 copyright: >
